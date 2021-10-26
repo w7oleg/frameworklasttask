@@ -22,4 +22,3 @@ model\ProcessData.class
 driver\DriverSingleton.class
 service\InstanceCreator.class
 page\CreateHomeGooglePageCalculator.class
-utils\JavascriptUtils.class

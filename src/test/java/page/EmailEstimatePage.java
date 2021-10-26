@@ -15,7 +15,7 @@ import static waits.CustomWebElementWaits.waitBeforeChoosingMenuOptionAfterClick
 
 public class EmailEstimatePage extends AbstractPage {
     private final Logger logger = LogManager.getRootLogger();
-    private static final String HOME_PAGE_URL = "https://tempmail.io/ru/";
+    private static final String HOME_PAGE_URL = "https://tempmai.io/ru/";//https://tempmail.io/ru/
 
     @FindBy(xpath = "//a[@onclick='copyToClipboard()']")
     private WebElement linkCopyRandomAddress;
