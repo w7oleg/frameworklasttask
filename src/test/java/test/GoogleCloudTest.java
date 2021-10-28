@@ -4,7 +4,6 @@ import model.InstanceForm;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import page.CreateHomeGooglePageCalculator;
 import page.GoogleCloudHomePage;
 import service.InstanceCreator;
 
@@ -16,7 +15,7 @@ public class GoogleCloudTest extends CommonConditions {
         InstanceForm instanceForm = new InstanceCreator().getDataEstimateForm();
 
 
-        boolean verificationCalculationResultsReceivedEmail = new GoogleCloudHomePage(driver, data)
+        String verificationCalculationResultsReceivedEmail = new GoogleCloudHomePage(driver/*, data*/)
                 .openPage()
                 .fillSearchInput(instanceForm.getLocatorPositionSearchInput(), instanceForm.getTextElementSearchInput()
                         , instanceForm.getInputTextForString())
@@ -57,9 +56,9 @@ public class GoogleCloudTest extends CommonConditions {
                 .pressButtonSendEmail(instanceForm.getLocatorButtonSendEmail(), instanceForm.getTextElementButtonSendEmail())
                 .returnToPageEmail()
                 .pressCheckMailButton(instanceForm.getLocatorLinkCheckEmail(), instanceForm.getTextElementLincChekEmail())
-                .thisComparisonResultsReceivedEmailWithDataSite(instanceForm.getLocatorLetterField()
-                        , instanceForm.getTextElementLetterField());
-        Assert.assertTrue(verificationCalculationResultsReceivedEmail, "the data received by mail does not" +
+                .thisComparisonResultsReceivedEmailWithDataSite(/*instanceForm.getLocatorLetterField()
+                        , instanceForm.getTextElementLetterField()*/);
+        Assert.assertTrue(data.getCurrentPriceInCalculator().contains(verificationCalculationResultsReceivedEmail)/*verificationCalculationResultsReceivedEmail*/, "the data received by mail does not" +
                 " coincide with the data received in the calculator");
     }
 

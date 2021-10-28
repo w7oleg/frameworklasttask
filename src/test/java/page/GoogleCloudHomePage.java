@@ -12,13 +12,13 @@ import static waits.CustomWebElementWaits.waitBeforeChoosingMenuOptionAfterClick
 
 public class GoogleCloudHomePage extends AbstractPage{
 
-
-    public GoogleCloudHomePage(WebDriver driver, ProcessData data) {
-        super(driver, data);
-        PageFactory.initElements(this.driver, this);
-    }
     private static final String HOME_PAGE_URL = "https://cloud.google.com/";
     private final Logger logger = LogManager.getRootLogger();
+
+    public GoogleCloudHomePage(WebDriver driver/*, ProcessData data*/) {
+        super(driver/*, data*/);
+        PageFactory.initElements(this.driver, this);
+    }
 
     @Override
     public GoogleCloudHomePage openPage() {
@@ -33,6 +33,6 @@ public class GoogleCloudHomePage extends AbstractPage{
         position.sendKeys(inputText);
         position.sendKeys(Keys.ENTER);
         logger.info("searching" + inputText);
-        return new GoogleSearchResultPage(driver, data);
+        return new GoogleSearchResultPage(driver/*, data*/);
     }
 }

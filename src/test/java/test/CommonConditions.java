@@ -18,7 +18,8 @@ public class CommonConditions {
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
         driver = DriverSingleton.getDriver();
-        data = new ProcessData();
+//        data = new ProcessData();
+//        data.setCurrentBrowser(((RemoteWebDriver) driver).getCapabilities().getBrowserName().toLowerCase());
     }
     
     @AfterMethod(alwaysRun = true)

@@ -12,9 +12,9 @@ import java.time.Duration;
 public class CustomWebElementWaits {
     private static long WAIT_TIMEOUT_SECONDS = 10;
 
-    public static WebElement waitBeforeChoosingMenuOption(String locator, WebDriver driver) {
+    public static WebElement waitBeforeChoosingMenuOption(By locator, WebDriver driver) {
         WebElement position = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(position));
         return position;

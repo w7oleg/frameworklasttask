@@ -20,14 +20,15 @@ import static waits.CustomWebElementWaits.waitBeforeChoosingMenuOptionAfterClick
 
 public class CreateHomeGooglePageCalculator extends AbstractPage {
 
-    private static final String HOME_PAGE_URL = "https://cloud.google.com/";
+
     private final Logger logger = LogManager.getRootLogger();
 
     @FindBy(css = "#cloud-site > devsite-iframe > iframe")
     private WebElement iFrame;
 
     @FindBy(xpath = "//h2[@class='md-title']/b[contains(text(), 'USD')]")
-    private List<WebElement> result;
+    //private List<WebElement> result;
+    private WebElement result;
 
     @FindBy(id = "myFrame")
     private WebElement iFrameCalculatorAfterIFrame;
@@ -35,8 +36,9 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     @FindBy(xpath = "//input[@type='email']")
     private WebElement inputEmail;
 
-    public CreateHomeGooglePageCalculator(WebDriver driver, ProcessData data) {
-        super(driver, data);
+    ProcessData data= new ProcessData();
+    public CreateHomeGooglePageCalculator(WebDriver driver/*, ProcessData data*/) {
+        super(driver/*, data*/);
         PageFactory.initElements(this.driver, this);
     }
     @Override
@@ -145,7 +147,8 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     }
 
     public CreateHomeGooglePageCalculator saveResultEstimate() {
-        saveResult(data, result);
+      //  saveResult(/*data*/data.setCurrentPriceInCalculator(), result);
+        data.setCurrentPriceInCalculator(result.getText());
         logger.info("Entered save Result Estimate");
         return this;
     }
@@ -159,7 +162,7 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     public EmailEstimatePage openNewTab() {
         TabsUtils.openNewTab(1, driver);
         logger.info("open New Tab");
-        return new EmailEstimatePage(driver, data);
+        return new EmailEstimatePage(driver/*, data*/);
     }
 
     public CreateHomeGooglePageCalculator enterEmail(String universalAddress, String element) {
@@ -178,6 +181,6 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     public EmailEstimatePage returnToPageEmail() {
         TabsUtils.openNewTab(1, driver);
         logger.info("return to Page Email");
-        return new EmailEstimatePage(driver, data);
+        return new EmailEstimatePage(driver/*, data*/);
     }
 }

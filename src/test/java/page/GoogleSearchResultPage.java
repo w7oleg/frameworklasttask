@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import static waits.CustomWebElementWaits.waitBeforeChoosingMenuOptionAfterClick;
 
 public class GoogleSearchResultPage extends AbstractPage{
-    protected GoogleSearchResultPage(WebDriver driver, ProcessData data) {
-        super(driver, data);
+    protected GoogleSearchResultPage(WebDriver driver/*, ProcessData data*/) {
+        super(driver/*, data*/);
     }
     private final Logger logger = LogManager.getRootLogger();
 
@@ -24,6 +24,6 @@ public class GoogleSearchResultPage extends AbstractPage{
     public CreateHomeGooglePageCalculator openCalculator(String universalAddress, String element) {
         waitBeforeChoosingMenuOptionAfterClick(universalAddress, element, driver).click();
         logger.info("Moved to PricingCalculatorPageFrame");
-        return new CreateHomeGooglePageCalculator(driver, data);
+        return new CreateHomeGooglePageCalculator(driver/*, data*/);
     }
 }

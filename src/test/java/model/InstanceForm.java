@@ -83,10 +83,6 @@ public class InstanceForm {
 
     private String locatorPositionPositionDownList;
 
-
-
-
-
     public static String getInputTextForString() {
         return InputTextForString;
     }
