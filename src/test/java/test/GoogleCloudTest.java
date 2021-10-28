@@ -17,7 +17,7 @@ public class GoogleCloudTest extends CommonConditions {
     @Test(description = "get a letter with the results of processing the request")
 
     public void checkEmailEstimate() {
-        ProcessData data= new ProcessData();
+     //   ProcessData data= new ProcessData();
         InstanceForm instanceForm = new InstanceCreator().getDataEstimateForm();
 
 
@@ -64,7 +64,7 @@ public class GoogleCloudTest extends CommonConditions {
                 .pressCheckMailButton(instanceForm.getLocatorLinkCheckEmail(), instanceForm.getTextElementLincChekEmail())
                 .thisComparisonResultsReceivedEmailWithDataSite(/*instanceForm.getLocatorLetterField()
                         , instanceForm.getTextElementLetterField()*/);
-        Assert.assertTrue(data.getCurrentPriceInCalculator().contains(verificationCalculationResultsReceivedEmail)/*verificationCalculationResultsReceivedEmail*/, "the data received by mail does not" +
+        Assert.assertTrue(ProcessData.getCurrentPriceInCalculator().contains(verificationCalculationResultsReceivedEmail)/*verificationCalculationResultsReceivedEmail*/, "the data received by mail does not" +
                 " coincide with the data received in the calculator");
     }
 
