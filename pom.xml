@@ -8,10 +8,13 @@
     <artifactId>frameworklasttask</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+
 
     <dependencies>
         <dependency>
@@ -114,14 +117,15 @@
 
 
     </dependencies>
-    <testResources>
-        <testResource>
-            <directory>src/test/resources</directory>
-            <filtering>true</filtering>
-        </testResource>
-    </testResources>
+
 
     <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
