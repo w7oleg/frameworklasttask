@@ -13,12 +13,12 @@ import java.sql.Driver;
 
 public class GoogleCloudTest extends CommonConditions {
 
-
+    InstanceForm instanceForm = new InstanceCreator().getDataEstimateForm();
     @Test(description = "get a letter with the results of processing the request")
 
     public void checkEmailEstimate() {
      //   ProcessData data= new ProcessData();
-        InstanceForm instanceForm = new InstanceCreator().getDataEstimateForm();
+
 
 
         String verificationCalculationResultsReceivedEmail = new GoogleCloudHomePage(driver/*, data*/)
