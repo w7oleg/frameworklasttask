@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke" duration-ms="72408" started-at="2021-10-28T18:06:41 MSK" finished-at="2021-10-28T18:07:53 MSK">
+  <suite name="Smoke" duration-ms="73362" started-at="2021-10-28T20:01:44 MSK" finished-at="2021-10-28T20:02:57 MSK">
     <groups>
     </groups>
-    <test name="Smoke" duration-ms="72408" started-at="2021-10-28T18:06:41 MSK" finished-at="2021-10-28T18:07:53 MSK">
+    <test name="Smoke" duration-ms="73362" started-at="2021-10-28T20:01:44 MSK" finished-at="2021-10-28T20:02:57 MSK">
       <class name="test.GoogleCloudTest">
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:test.GoogleCloudTest@4d50efb8]" name="browserSetup" is-config="true" duration-ms="7316" started-at="2021-10-28T18:06:41 MSK" finished-at="2021-10-28T18:06:48 MSK">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:test.GoogleCloudTest@6f195bc3]" name="browserSetup" is-config="true" duration-ms="11101" started-at="2021-10-28T20:01:44 MSK" finished-at="2021-10-28T20:01:55 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="checkEmailEstimate()[pri:0, instance:test.GoogleCloudTest@4d50efb8]" name="checkEmailEstimate" duration-ms="63970" started-at="2021-10-28T18:06:48 MSK" description="get a letter with the results of processing the request" finished-at="2021-10-28T18:07:52 MSK">
+        <test-method status="PASS" signature="checkEmailEstimate()[pri:0, instance:test.GoogleCloudTest@6f195bc3]" name="checkEmailEstimate" duration-ms="60696" started-at="2021-10-28T20:01:55 MSK" description="get a letter with the results of processing the request" finished-at="2021-10-28T20:02:55 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEmailEstimate -->
-        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:test.GoogleCloudTest@4d50efb8]" name="browserTearDown" is-config="true" duration-ms="1042" started-at="2021-10-28T18:07:52 MSK" finished-at="2021-10-28T18:07:53 MSK">
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:test.GoogleCloudTest@6f195bc3]" name="browserTearDown" is-config="true" duration-ms="1482" started-at="2021-10-28T20:02:55 MSK" finished-at="2021-10-28T20:02:57 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearDown -->
