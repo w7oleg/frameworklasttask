@@ -18,6 +18,7 @@ public class CommonConditions {
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
         driver = DriverSingleton.getDriver();
+
     }
     
     @AfterMethod(alwaysRun = true)
