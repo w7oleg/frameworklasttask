@@ -13,7 +13,7 @@ import utils.TestListener;
 @Listeners({TestListener.class})
 public class CommonConditions {
     protected WebDriver driver;
-   ProcessData data;
+ //  ProcessData data;
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
