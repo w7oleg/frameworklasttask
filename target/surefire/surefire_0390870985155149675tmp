@@ -1,0 +1,8 @@
+#surefire_0
+#Fri Oct 29 13:05:37 MSK 2021
+environment=dev
+browser=chrome
+surefire.suiteXmlFiles=src\\test\\resources\\testng-smoke.xml
+basedir=D\:\\frameworklasttask
+user.dir=D\:\\frameworklasttask
+localRepository=C\:\\Users\\UZER\\.m2\\repository
