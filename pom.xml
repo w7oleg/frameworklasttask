@@ -8,13 +8,11 @@
     <artifactId>frameworklasttask</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
-
 
     <dependencies>
         <dependency>
@@ -29,18 +27,11 @@
             <version>7.4.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.0.0</version>
+            <version>4.0.0-beta-1</version>
         </dependency>
-
-        <!--        <dependency>-->
-<!--            <groupId>org.seleniumhq.selenium</groupId>-->
-<!--            <artifactId>selenium-java</artifactId>-->
-<!--            <version>4.0.0-beta-1</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
@@ -53,36 +44,13 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.0.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.14.1</version>
-        </dependency>
 
-        <!--        <dependency>-->
-<!--            <groupId>org.apache.logging.log4j</groupId>-->
-<!--            <artifactId>log4j-api</artifactId>-->
-<!--            <version>2.11.1</version>-->
-<!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.14.1</version>
+            <scope>test</scope>
         </dependency>
-
-        <!--        <dependency>-->
-<!--            <groupId>org.apache.logging.log4j</groupId>-->
-<!--            <artifactId>log4j-core</artifactId>-->
-<!--            <version>2.11.1</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.logging.log4j</groupId>-->
-<!--            <artifactId>log4j-core</artifactId>-->
-<!--            <version>2.14.1</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-report-plugin</artifactId>
@@ -95,37 +63,10 @@
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.maven.plugins</groupId>-->
-<!--            <artifactId>maven-surefire-plugin</artifactId>-->
-<!--            <version>3.0.0-M5</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.maven.shared</groupId>-->
-<!--            <artifactId>maven-invoker</artifactId>-->
-<!--            <version>3.1.0</version>-->
-<!--        </dependency>-->
-
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-logger-api &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.maven.surefire</groupId>-->
-<!--            <artifactId>surefire-logger-api</artifactId>-->
-<!--            <version>3.0.0-M5</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-
 
     </dependencies>
 
-
     <build>
-<!--        <testResources>-->
-<!--            <testResource>-->
-<!--                <directory>src/test/resources</directory>-->
-<!--                <filtering>true</filtering>-->
-<!--            </testResource>-->
-<!--        </testResources>-->
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -171,79 +112,6 @@
                     <version>3.0.0</version>
                 </plugin>
             </plugins>
-<!--            <plugins>-->
-<!--                &lt;!&ndash; clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <artifactId>maven-clean-plugin</artifactId>-->
-<!--                    <version>3.1.0</version>-->
-<!--                </plugin>-->
-<!--                &lt;!&ndash; default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <artifactId>maven-resources-plugin</artifactId>-->
-<!--                    <version>3.0.2</version>-->
-<!--                </plugin>-->
-<!--&lt;!&ndash;                <plugin>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <artifactId>maven-compiler-plugin</artifactId>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <version>3.8.0</version>&ndash;&gt;-->
-<!--&lt;!&ndash;                </plugin>&ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                    <configuration>-->
-<!--                        <source>8</source>-->
-<!--                        <target>8</target>-->
-<!--                    </configuration>-->
-<!--                </plugin>-->
-<!--                &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.maven.shared/maven-invoker &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-failsafe-plugin</artifactId>-->
-<!--                    &lt;!&ndash; I don't specify version at all (Spring Boot can autoconfigure plugin version) &ndash;&gt;-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            &lt;!&ndash; changed <id> to <phase>, but I don't know whether it important or not. &ndash;&gt;-->
-<!--                            <phase>integration-test</phase>-->
-<!--                            &lt;!&ndash; ... no changes here: the same as in the question ... &ndash;&gt;-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                </plugin>-->
-
-
-
-<!--&lt;!&ndash;                <plugin>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <version>2.22.1</version>&ndash;&gt;-->
-<!--&lt;!&ndash;                </plugin>&ndash;&gt;-->
-<!--&lt;!&ndash;                <plugin>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <version>2.22.1</version>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <configuration>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <testFailureIgnore>true</testFailureIgnore>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </configuration>&ndash;&gt;-->
-<!--&lt;!&ndash;                </plugin>&ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <artifactId>maven-jar-plugin</artifactId>-->
-<!--                    <version>3.0.2</version>-->
-<!--                </plugin>-->
-<!--                <plugin>-->
-<!--                    <artifactId>maven-install-plugin</artifactId>-->
-<!--                    <version>2.5.2</version>-->
-<!--                </plugin>-->
-<!--                <plugin>-->
-<!--                    <artifactId>maven-deploy-plugin</artifactId>-->
-<!--                    <version>2.8.2</version>-->
-<!--                </plugin>-->
-<!--                &lt;!&ndash; site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <artifactId>maven-site-plugin</artifactId>-->
-<!--                    <version>3.7.1</version>-->
-<!--                </plugin>-->
-<!--                <plugin>-->
-<!--                    <artifactId>maven-project-info-reports-plugin</artifactId>-->
-<!--                    <version>3.0.0</version>-->
-<!--                </plugin>-->
-<!--            </plugins>-->
         </pluginManagement>
     </build>
 
