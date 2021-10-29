@@ -107,13 +107,13 @@
             <version>3.1.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-logger-api -->
-        <dependency>
-            <groupId>org.apache.maven.surefire</groupId>
-            <artifactId>surefire-logger-api</artifactId>
-            <version>3.0.0-M5</version>
-            <scope>test</scope>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-logger-api &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.maven.surefire</groupId>-->
+<!--            <artifactId>surefire-logger-api</artifactId>-->
+<!--            <version>3.0.0-M5</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
 
     </dependencies>
