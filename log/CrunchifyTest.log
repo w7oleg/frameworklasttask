@@ -234,3 +234,65 @@
 2021-10-29 12:56:48 [main] INFO  :177 - press Button Send Email
 2021-10-29 12:56:48 [main] INFO  :183 - return to Page Email
 2021-10-29 12:56:59 [main] INFO  :52 - press Check Mail Button
+2021-10-29 13:06:19 [main] INFO  :26 - page opened
+2021-10-29 13:06:21 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-10-29 13:07:19 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:07:37 [main] INFO  :53 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:07:37 [main] INFO  :61 - Entered instancesNumber of instances
+2021-10-29 13:10:11 [main] INFO  :26 - page opened
+2021-10-29 13:10:12 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-10-29 13:10:42 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:11:03 [main] INFO  :53 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:11:03 [main] INFO  :61 - Entered instancesNumber of instances
+2021-10-29 13:14:21 [main] INFO  :26 - page opened
+2021-10-29 13:14:24 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-10-29 13:15:13 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:15:31 [main] INFO  :53 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:15:31 [main] INFO  :61 - Entered instancesNumber of instances
+2021-10-29 13:15:33 [main] INFO  :69 - Entered Operation Systemfree
+2021-10-29 13:15:34 [main] INFO  :77 - Entered Machine Classregular
+2021-10-29 13:15:35 [main] INFO  :85 - Entered Seriesn1
+2021-10-29 13:15:36 [main] INFO  :93 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-10-29 13:15:36 [main] INFO  :99 - Entered addGPUs
+2021-10-29 13:15:37 [main] INFO  :107 - Entered Number GPUs1
+2021-10-29 13:15:37 [main] INFO  :115 - Entered Type GPUNVIDIA_TESLA_V100
+2021-10-29 13:15:38 [main] INFO  :123 - Entered Local SSD2
+2021-10-29 13:15:39 [main] INFO  :131 - Entered Datacenter Locationeurope-west3
+2021-10-29 13:15:40 [main] INFO  :139 - Entered Committed Usage1
+2021-10-29 13:15:40 [main] INFO  :145 - Entered Add To Estimate
+2021-10-29 13:15:40 [main] INFO  :152 - Entered save Result Estimate
+2021-10-29 13:15:41 [main] INFO  :158 - Entered press Button EmailEstimate
+2021-10-29 13:15:41 [main] INFO  :164 - open New Tab
+2021-10-29 13:15:54 [main] INFO  :33 - page opened
+2021-10-29 13:15:54 [main] INFO  :40 - copy Email Address
+2021-10-29 13:15:54 [main] INFO  :46 - come back to Calculator
+2021-10-29 13:15:54 [main] INFO  :171 - enter Email
+2021-10-29 13:15:54 [main] INFO  :177 - press Button Send Email
+2021-10-29 13:15:54 [main] INFO  :183 - return to Page Email
+2021-10-29 13:16:00 [main] INFO  :52 - press Check Mail Button
+2021-10-29 13:34:37 [main] INFO  :26 - page opened
+2021-10-29 13:34:38 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-10-29 13:35:09 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:35:24 [main] INFO  :53 - Moved to PricingCalculatorPageFrame
+2021-10-29 13:35:24 [main] INFO  :61 - Entered instancesNumber of instances
+2021-10-29 13:35:30 [main] INFO  :69 - Entered Operation Systemfree
+2021-10-29 13:35:31 [main] INFO  :77 - Entered Machine Classregular
+2021-10-29 13:35:31 [main] INFO  :85 - Entered Seriesn1
+2021-10-29 13:35:32 [main] INFO  :93 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-10-29 13:35:32 [main] INFO  :99 - Entered addGPUs
+2021-10-29 13:35:40 [main] INFO  :107 - Entered Number GPUs1
+2021-10-29 13:35:41 [main] INFO  :115 - Entered Type GPUNVIDIA_TESLA_V100
+2021-10-29 13:35:41 [main] INFO  :123 - Entered Local SSD2
+2021-10-29 13:35:42 [main] INFO  :131 - Entered Datacenter Locationeurope-west3
+2021-10-29 13:35:43 [main] INFO  :139 - Entered Committed Usage1
+2021-10-29 13:35:43 [main] INFO  :145 - Entered Add To Estimate
+2021-10-29 13:35:44 [main] INFO  :152 - Entered save Result Estimate
+2021-10-29 13:35:44 [main] INFO  :158 - Entered press Button EmailEstimate
+2021-10-29 13:35:45 [main] INFO  :164 - open New Tab
+2021-10-29 13:35:55 [main] INFO  :33 - page opened
+2021-10-29 13:35:55 [main] INFO  :40 - copy Email Address
+2021-10-29 13:35:55 [main] INFO  :46 - come back to Calculator
+2021-10-29 13:35:55 [main] INFO  :171 - enter Email
+2021-10-29 13:35:55 [main] INFO  :177 - press Button Send Email
+2021-10-29 13:35:56 [main] INFO  :183 - return to Page Email
+2021-10-29 13:36:07 [main] INFO  :52 - press Check Mail Button
