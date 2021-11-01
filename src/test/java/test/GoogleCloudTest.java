@@ -2,14 +2,11 @@ package test;
 
 import model.InstanceForm;
 import model.ProcessData;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import page.GoogleCloudHomePage;
 import service.InstanceCreator;
-
-import java.sql.Driver;
 
 public class GoogleCloudTest extends CommonConditions {
 
@@ -17,55 +14,36 @@ public class GoogleCloudTest extends CommonConditions {
     @Test(description = "get a letter with the results of processing the request")
 
     public void checkEmailEstimate() {
-     //   ProcessData data= new ProcessData();
-
-
-
-        String verificationCalculationResultsReceivedEmail = new GoogleCloudHomePage(driver/*, data*/)
+        String verificationCalculationResultsReceivedEmail = new GoogleCloudHomePage(driver)
                 .openPage()
-                .fillSearchInput(instanceForm.getLocatorPositionSearchInput(), instanceForm.getTextElementSearchInput()
-                        , instanceForm.getInputTextForString())
-                .openCalculator(instanceForm.getLocatorPositionCalculatorLink(), instanceForm.getTextElementCalculatorLink())
-                .activationComputeEngine(instanceForm.getLocatorPositionComputerEngine()
-                        , instanceForm.getTextElementComputerEngine())
-                .choiceNumberOfInstances(instanceForm.getLocatorPositionNumberInstances()
-                        , instanceForm.getTextElementNumberInstances())
-                .choiceOperationSystem(instanceForm.getLocatorPositionElement()
-                        , instanceForm.getTextElementChoiceOperationSystem()
-                        , instanceForm.getChoiceOperationSystem(), instanceForm.getLocatorPositionPositionDownList())
-                .choiceMachineClass(instanceForm.getLocatorPositionElement(), instanceForm.getTextElementMachineClass()
-                        , instanceForm.getChoiceMachineClass(), instanceForm.getLocatorPositionPositionDownList())
-                .choiceSeries(instanceForm.getLocatorPositionElement(), instanceForm.getTextElementSeries()
-                        , instanceForm.getChoiceSeries()
-                        , instanceForm.getLocatorPositionPositionDownList())
-                .choiceMachineType(instanceForm.getLocatorPositionElement(), instanceForm.getTextElementMachineType()
-                        , instanceForm.getChoiceMachineType(), instanceForm.getLocatorPositionPositionDownList())
-                .addGPUs(instanceForm.getLocatorPositionElementGPUS(), instanceForm.getTextElementAddGPU())
-                .choiceNumberGPUs(instanceForm.getLocatorPositionSpecificElementGPUS(), instanceForm.getTextElementNumberOfGPUS()
-                        , instanceForm.getChoiceNumberGPUs(), instanceForm.getLocatorPositionPositionDownList())
-                .choiceTypeGPU(instanceForm.getLocatorPositionSpecificElementGPUS(), instanceForm.getTextElementTextGpuType()
-                        , instanceForm.getChoiceTypeGPU(), instanceForm.getLocatorPositionPositionDownList())
-                .choiceLocalSSD(instanceForm.getLocatorPositionElementLocalSSD(), instanceForm.getTextElementLocalSSD()
-                        , instanceForm.getChoiceLocalSSD(), instanceForm.getLocatorPositionPositionDownList())
-                .choiceDatacenterLocation(instanceForm.getLocatorPositionDatacenter(), instanceForm.getTextElementDatacenter()
-                        , instanceForm.getChoiceDatacenterLocation(), instanceForm.getLocatorPositionPositionDownList())
-                .choiceCommittedUsage(instanceForm.getLocatorPositionElement(), instanceForm.getTextElementCommittedUsage()
-                        , instanceForm.getChoiceCommittedUsage(), instanceForm.getLocatorPositionPositionDownList())
-                .pressAddToEstimate(instanceForm.getLocatorPositionAddEstimate(), instanceForm.getTextElementAddEstimate())
+                .fillSearchInput()
+                .openCalculator()
+                .activationComputeEngine()
+                .choiceNumberOfInstances()
+                .choiceOperationSystem(instanceForm.getChoiceOperationSystem())
+                .choiceMachineClass(instanceForm.getChoiceMachineClass())
+                .choiceSeries(instanceForm.getChoiceSeries())
+                .choiceMachineType(instanceForm.getChoiceMachineType())
+                .addGPUs()
+                .choiceNumberGPUs(instanceForm.getChoiceNumberGPUs())
+                .choiceTypeGPU(instanceForm.getChoiceTypeGPU())
+                .choiceLocalSSD(instanceForm.getChoiceLocalSSD())
+                .choiceDatacenterLocation(instanceForm.getChoiceDatacenterLocation())
+                .choiceCommittedUsage(instanceForm.getChoiceCommittedUsage())
+                .pressAddToEstimate()
                 .saveResultEstimate()
-                .pressButtonEmailEstimate(instanceForm.getLocatorPositionButtonEmail(), instanceForm.getTextElementButtonEmail())
+                .pressButtonEmailEstimate()
                 .openNewTab()
                 .openPage()
-                .copyEmailAddress(instanceForm.getLocatorLinkCopyRandomAddress(), instanceForm.getTextElementCopyRandomAddress())
+                .copyEmailAddress()
                 .comeBackToCalculator()
-                .enterEmail(instanceForm.getLocatorInputEmail(), instanceForm.getTextElementInputEmail())
-                .pressButtonSendEmail(instanceForm.getLocatorButtonSendEmail(), instanceForm.getTextElementButtonSendEmail())
+                .enterEmail()
+                .pressButtonSendEmail()
                 .returnToPageEmail()
-                .pressCheckMailButton(instanceForm.getLocatorLinkCheckEmail(), instanceForm.getTextElementLincChekEmail())
-                .thisComparisonResultsReceivedEmailWithDataSite(/*instanceForm.getLocatorLetterField()
-                        , instanceForm.getTextElementLetterField()*/);
-        Assert.assertTrue(ProcessData.getCurrentPriceInCalculator().contains(verificationCalculationResultsReceivedEmail)/*verificationCalculationResultsReceivedEmail*/, "the data received by mail does not" +
-                " coincide with the data received in the calculator");
+                .pressCheckMailButton()
+                .thisComparisonResultsReceivedEmailWithDataSite();
+        Assert.assertTrue(ProcessData.getCurrentPriceInCalculator().contains(verificationCalculationResultsReceivedEmail)
+                , "the data received by mail does not coincide with the data received in the calculator");
     }
 
     @AfterMethod(alwaysRun = true)

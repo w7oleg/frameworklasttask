@@ -6,12 +6,10 @@ waits\CustomConditions$1.class
 page\GoogleSearchResultPage.class
 test\HomePagesAvailableTest.class
 page\AbstractPage.class
-utils\ComparisonResults.class
 utils\TestListener.class
 test\GoogleCloudTest.class
 test\CommonConditions.class
 utils\TabsUtils.class
-utils\ResultUtils.class
 resources\GooglePageResources.class
 model\InstanceForm.class
 utils\ComputeEngineUtils.class

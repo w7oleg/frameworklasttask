@@ -20,12 +20,6 @@ public class CustomWebElementWaits {
         return position;
     }
 
-    public static WebElement waitBeforeChoosingMenuOptionAfterClick(String locatorElement, String variable, WebDriver driver) {
-        String locator = String.format(locatorElement, variable);
-        return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
-                .until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
-    }
-
     public static WebElement waitBeforeChoosingMenuOptionAfterClick(WebElement element, WebDriver driver) {
         return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(element));

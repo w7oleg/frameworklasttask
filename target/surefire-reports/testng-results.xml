@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="126401" started-at="2021-10-29T13:34:06 MSK" finished-at="2021-10-29T13:36:12 MSK">
+  <suite name="Smoke" duration-ms="68249" started-at="2021-11-01T12:07:03Z" finished-at="2021-11-01T12:08:11Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="126401" started-at="2021-10-29T13:34:06 MSK" finished-at="2021-10-29T13:36:12 MSK">
+    <test name="Smoke" duration-ms="68249" started-at="2021-11-01T12:07:03Z" finished-at="2021-11-01T12:08:11Z">
       <class name="test.GoogleCloudTest">
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:test.GoogleCloudTest@7ba18f1b]" name="browserSetup" is-config="true" duration-ms="15840" started-at="2021-10-29T13:34:06 MSK" finished-at="2021-10-29T13:34:22 MSK">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:test.GoogleCloudTest@78aab498]" name="browserSetup" is-config="true" duration-ms="2945" started-at="2021-11-01T15:07:03Z" finished-at="2021-11-01T15:07:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="checkEmailEstimate()[pri:0, instance:test.GoogleCloudTest@7ba18f1b]" name="checkEmailEstimate" duration-ms="105412" started-at="2021-10-29T13:34:22 MSK" description="get a letter with the results of processing the request" finished-at="2021-10-29T13:36:07 MSK">
+        <test-method status="PASS" signature="checkEmailEstimate()[pri:0, instance:test.GoogleCloudTest@78aab498]" name="checkEmailEstimate" duration-ms="64090" started-at="2021-11-01T15:07:06Z" description="get a letter with the results of processing the request" finished-at="2021-11-01T15:08:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEmailEstimate -->
-        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:test.GoogleCloudTest@7ba18f1b]" name="browserTearDown" is-config="true" duration-ms="3784" started-at="2021-10-29T13:36:07 MSK" finished-at="2021-10-29T13:36:11 MSK">
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:test.GoogleCloudTest@78aab498]" name="browserTearDown" is-config="true" duration-ms="1197" started-at="2021-11-01T15:08:10Z" finished-at="2021-11-01T15:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearDown -->
       </class> <!-- test.GoogleCloudTest -->
-      <class name="test.HomePagesAvailableTest">
-        <test-method status="PASS" signature="checkAvailableCloudPage()[pri:0, instance:test.HomePagesAvailableTest@530612ba]" name="checkAvailableCloudPage" duration-ms="82" started-at="2021-10-29T13:36:11 MSK" description="Smoke" finished-at="2021-10-29T13:36:11 MSK">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAvailableCloudPage -->
-        <test-method status="PASS" signature="checkAvailableTemporaryEmailPage()[pri:0, instance:test.HomePagesAvailableTest@530612ba]" name="checkAvailableTemporaryEmailPage" duration-ms="1219" started-at="2021-10-29T13:36:11 MSK" description="Smoke" finished-at="2021-10-29T13:36:12 MSK">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAvailableTemporaryEmailPage -->
-      </class> <!-- test.HomePagesAvailableTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Smoke -->
 </testng-results>

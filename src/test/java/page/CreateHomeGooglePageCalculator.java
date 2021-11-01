@@ -11,23 +11,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.TabsUtils;
 
-import java.util.List;
-
 import static utils.ComputeEngineUtils.active;
 import static utils.LocatorUtils.positionElement;
-import static utils.ResultUtils.saveResult;
 import static waits.CustomWebElementWaits.waitBeforeChoosingMenuOptionAfterClick;
 
 public class CreateHomeGooglePageCalculator extends AbstractPage {
-
-
     private final Logger logger = LogManager.getRootLogger();
 
     @FindBy(css = "#cloud-site > devsite-iframe > iframe")
     private WebElement iFrame;
 
     @FindBy(xpath = "//h2[@class='md-title']/b[contains(text(), 'USD')]")
-    //private List<WebElement> result;
     private WebElement result;
 
     @FindBy(id = "myFrame")
@@ -36,11 +30,63 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     @FindBy(xpath = "//input[@type='email']")
     private WebElement inputEmail;
 
-    ProcessData data= new ProcessData();
-    public CreateHomeGooglePageCalculator(WebDriver driver/*, ProcessData data*/) {
-        super(driver/*, data*/);
+    @FindBy(xpath = "//md-tab-item/div[@title='Compute Engine' and @class='tab-holder compute']")
+    private WebElement locatorComputerEngine;
+
+    @FindBy(xpath = "//label[contains(text(),'Number of instances')]/following::input")
+    private WebElement locatorNumberInstances;
+
+    @FindBy(xpath = "//md-select-value[span[div[contains(text(),'Free: Debian, CentOS, CoreOS, Ubuntu or BYOL (Bring Your Own License)')]]]")
+    private WebElement locatorOperationSystem;
+
+    @FindBy(xpath = "//md-select-value[span[div[contains(text(),'Regular')]]]")
+    private WebElement locatorMachineClass;
+
+    @FindBy(xpath = "//md-select-value[span[div[contains(text(),'E2')]]]")
+    private WebElement locatorSeries;
+
+    @FindBy(xpath = "//md-select-value[span[div[contains(text(),'n1-standard-1 (vCPUs: 1, RAM: 3.75GB)')]]]")
+    private WebElement locatorMachineType;
+
+    @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs']")
+    private WebElement locatorAddGPUs;
+
+    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
+    private WebElement locatorNumberGPUs;
+
+    @FindBy(xpath = "//md-select[@placeholder='GPU type']")
+    private WebElement locatorTypeGPUs;
+
+    @FindBy(xpath = "//md-select[@placeholder='Local SSD']")
+    private WebElement locatorLocalSSD;
+
+    @FindBy(xpath = "//md-select[@placeholder='Datacenter location']/md-select-value")
+    private WebElement locatorDataCenter;
+
+    @FindBy(xpath = "//md-select-value[span[div[contains(text(),'None')]]]")
+    private WebElement locatorCommittedUsage;
+
+    @FindBy(xpath = "//button[@aria-label='Add to Estimate']")
+    private WebElement locatorAddToEstimate;
+
+    @FindBy(xpath = "//button[@aria-label= 'Email Estimate']")
+    private WebElement locatorPressButtonEmailEstimate;
+
+    @FindBy(xpath = "//input[@type='email']")
+    private WebElement locatorEnterEmail;
+
+    @FindBy(xpath = "//button[@aria-label='Send Email']")
+    private WebElement locatorButtonSendEmail;
+
+    private String universalLocatorDown = "//div[contains(@class,'md-active md-clickable')]//md-option[@value='%s']";
+
+    ProcessData data = new ProcessData();
+
+    public CreateHomeGooglePageCalculator(WebDriver driver) {
+        super(driver);
         PageFactory.initElements(this.driver, this);
     }
+
     @Override
     public CreateHomeGooglePageCalculator openPage() {
         waitBeforeChoosingMenuOptionAfterClick(driver);
@@ -48,113 +94,103 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
         return this;
     }
 
-    public CreateHomeGooglePageCalculator activationComputeEngine(String universalAddress, String element) {
+    public CreateHomeGooglePageCalculator activationComputeEngine() {
         active(driver, iFrame, iFrameCalculatorAfterIFrame);
         logger.info("Moved to PricingCalculatorPageFrame");
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceNumberOfInstances(String universalAddress, String element) {
-        WebElement position = waitBeforeChoosingMenuOptionAfterClick(universalAddress, element, driver);
+    public CreateHomeGooglePageCalculator choiceNumberOfInstances() {
+        WebElement position = waitBeforeChoosingMenuOptionAfterClick(locatorNumberInstances, driver);
         position.click();
         position.sendKeys(InstanceForm.getChoiceNumberOfInstances());
-        logger.info("Entered instances" + element);
+        logger.info("Entered instances");
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceOperationSystem(String universalAddress, String element
-            , String operationSystem, String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, operationSystem, driver).click();
+    public CreateHomeGooglePageCalculator choiceOperationSystem(String operationSystem) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorOperationSystem, driver).click();
+        positionElement(universalLocatorDown, operationSystem, driver).click();
         logger.info("Entered Operation System" + operationSystem);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceMachineClass(String universalAddress, String element
-            , String machineClass, String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, machineClass, driver).click();
+    public CreateHomeGooglePageCalculator choiceMachineClass(String machineClass) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorMachineClass, driver).click();
+        positionElement(universalLocatorDown, machineClass, driver).click();
         logger.info("Entered Machine Class" + machineClass);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceSeries(String universalAddress, String element, String series
-            , String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, series, driver).click();
+    public CreateHomeGooglePageCalculator choiceSeries(String series) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorSeries, driver).click();
+        positionElement(universalLocatorDown, series, driver).click();
         logger.info("Entered Series" + series);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceMachineType(String universalAddress, String element, String type
-            , String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, type, driver).click();
+    public CreateHomeGooglePageCalculator choiceMachineType(String type) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorMachineType, driver).click();
+        positionElement(universalLocatorDown, type, driver).click();
         logger.info("Entered MachineType" + type);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator addGPUs(String universalAddress, String element) {
-        positionElement(universalAddress, element, driver).click();
+    public CreateHomeGooglePageCalculator addGPUs() {
+        waitBeforeChoosingMenuOptionAfterClick(locatorAddGPUs, driver).click();
         logger.info("Entered addGPUs");
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceNumberGPUs(String universalAddress, String element, String number
-            , String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, number, driver).click();
+    public CreateHomeGooglePageCalculator choiceNumberGPUs(String number) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorNumberGPUs, driver).click();
+        positionElement(universalLocatorDown, number, driver).click();
         logger.info("Entered Number GPUs" + number);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceTypeGPU(String universalAddress, String element, String type
-            , String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, type, driver).click();
+    public CreateHomeGooglePageCalculator choiceTypeGPU(String type) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorTypeGPUs, driver).click();
+        positionElement(universalLocatorDown, type, driver).click();
         logger.info("Entered Type GPU" + type);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceLocalSSD(String universalAddress, String element, String local
-            , String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, local, driver).click();
+    public CreateHomeGooglePageCalculator choiceLocalSSD(String local) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorLocalSSD, driver).click();
+        positionElement(universalLocatorDown, local, driver).click();
         logger.info("Entered Local SSD" + local);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceDatacenterLocation(String universalAddress, String element, String center
-            , String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, center, driver).click();
+    public CreateHomeGooglePageCalculator choiceDatacenterLocation(String center) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorDataCenter, driver).click();
+        positionElement(universalLocatorDown, center, driver).click();
         logger.info("Entered Datacenter Location" + center);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceCommittedUsage(String universalAddress, String element, String period
-            , String locatorDown) {
-        positionElement(universalAddress, element, driver).click();
-        positionElement(locatorDown, period, driver).click();
+    public CreateHomeGooglePageCalculator choiceCommittedUsage(String period) {
+        waitBeforeChoosingMenuOptionAfterClick(locatorCommittedUsage, driver).click();
+        positionElement(universalLocatorDown, period, driver).click();
         logger.info("Entered Committed Usage" + period);
         return this;
     }
 
-    public CreateHomeGooglePageCalculator pressAddToEstimate(String universalAddress, String element) {
-        waitBeforeChoosingMenuOptionAfterClick(universalAddress, element, driver).click();
+    public CreateHomeGooglePageCalculator pressAddToEstimate() {
+        waitBeforeChoosingMenuOptionAfterClick(locatorAddToEstimate, driver).click();
         logger.info("Entered Add To Estimate");
         return this;
     }
 
     public CreateHomeGooglePageCalculator saveResultEstimate() {
-      //  saveResult(/*data*/data.setCurrentPriceInCalculator(), result);
         data.setCurrentPriceInCalculator(result.getText());
         logger.info("Entered save Result Estimate");
         return this;
     }
 
-    public CreateHomeGooglePageCalculator pressButtonEmailEstimate(String universalAddress, String element) {
-        positionElement(universalAddress, element, driver).click();
+    public CreateHomeGooglePageCalculator pressButtonEmailEstimate() {
+        waitBeforeChoosingMenuOptionAfterClick(locatorPressButtonEmailEstimate, driver).click();
         logger.info("Entered press Button EmailEstimate");
         return this;
     }
@@ -165,15 +201,15 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
         return new EmailEstimatePage(driver/*, data*/);
     }
 
-    public CreateHomeGooglePageCalculator enterEmail(String universalAddress, String element) {
-        WebElement position = waitBeforeChoosingMenuOptionAfterClick(universalAddress, element, driver);
+    public CreateHomeGooglePageCalculator enterEmail() {
+        WebElement position = waitBeforeChoosingMenuOptionAfterClick(locatorEnterEmail, driver);
         position.sendKeys(Keys.LEFT_CONTROL, "v");
         logger.info("enter Email");
         return this;
     }
 
-    public CreateHomeGooglePageCalculator pressButtonSendEmail(String universalAddress, String element) {
-        waitBeforeChoosingMenuOptionAfterClick(universalAddress, element, driver).click();
+    public CreateHomeGooglePageCalculator pressButtonSendEmail() {
+        waitBeforeChoosingMenuOptionAfterClick(locatorButtonSendEmail, driver).click();
         logger.info("press Button Send Email");
         return this;
     }
