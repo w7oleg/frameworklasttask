@@ -1,9 +1,9 @@
+utils\SaveResultUtils.class
 waits\CustomWebElementWaits.class
 page\EmailEstimatePage.class
 waits\CustomConditions.class
 utils\PingUtils.class
 waits\CustomConditions$1.class
-utils\SaveUtils.class
 page\GoogleSearchResultPage.class
 test\HomePagesAvailableTest.class
 page\AbstractPage.class
