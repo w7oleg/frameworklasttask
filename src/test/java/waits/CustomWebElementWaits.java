@@ -12,7 +12,7 @@ import java.time.Duration;
 public class CustomWebElementWaits {
     private static long WAIT_TIMEOUT_SECONDS = 10;
 
-    public static WebElement waitBeforeChoosingMenuOption(By locator, WebDriver driver) {
+    public static WebElement waitPresenceOfElementLocatedAndElementToBeClickable(By locator, WebDriver driver) {
         WebElement position = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.presenceOfElementLocated(locator));
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
@@ -20,12 +20,12 @@ public class CustomWebElementWaits {
         return position;
     }
 
-    public static WebElement waitBeforeChoosingMenuOptionAfterClick(WebElement element, WebDriver driver) {
+    public static WebElement waitElementToBeClickable(WebElement element, WebDriver driver) {
         return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public static Boolean waitBeforeChoosingMenuOptionAfterClick(WebDriver driver){
+    public static Boolean waitPageLoad(WebDriver driver){
        return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS)).withMessage("javascript didn't load")
                 .until(CustomConditions.jsLoadCompleted());
     }

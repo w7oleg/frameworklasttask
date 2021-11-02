@@ -2,8 +2,6 @@ package page;
 
 import model.InstanceForm;
 import model.ProcessData;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,10 +11,10 @@ import utils.TabsUtils;
 
 import static utils.ComputeEngineUtils.active;
 import static utils.LocatorUtils.positionElement;
-import static waits.CustomWebElementWaits.waitBeforeChoosingMenuOptionAfterClick;
+import static utils.SaveResultUtils.saveResult;
+import static waits.CustomWebElementWaits.*;
 
 public class CreateHomeGooglePageCalculator extends AbstractPage {
-    private final Logger logger = LogManager.getRootLogger();
 
     @FindBy(css = "#cloud-site > devsite-iframe > iframe")
     private WebElement iFrame;
@@ -80,8 +78,6 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
 
     private String universalLocatorDown = "//div[contains(@class,'md-active md-clickable')]//md-option[@value='%s']";
 
-    ProcessData data = new ProcessData();
-
     public CreateHomeGooglePageCalculator(WebDriver driver) {
         super(driver);
         PageFactory.initElements(this.driver, this);
@@ -89,7 +85,7 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
 
     @Override
     public CreateHomeGooglePageCalculator openPage() {
-        waitBeforeChoosingMenuOptionAfterClick(driver);
+        waitPageLoad(driver);
         logger.info("Opened page CloudGooglePageWithSearchingResultFrame");
         return this;
     }
@@ -101,7 +97,7 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     }
 
     public CreateHomeGooglePageCalculator choiceNumberOfInstances() {
-        WebElement position = waitBeforeChoosingMenuOptionAfterClick(locatorNumberInstances, driver);
+        WebElement position = waitElementToBeClickable(locatorNumberInstances, driver);
         position.click();
         position.sendKeys(InstanceForm.getChoiceNumberOfInstances());
         logger.info("Entered instances");
@@ -109,88 +105,88 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     }
 
     public CreateHomeGooglePageCalculator choiceOperationSystem(String operationSystem) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorOperationSystem, driver).click();
+        waitElementToBeClickable(locatorOperationSystem, driver).click();
         positionElement(universalLocatorDown, operationSystem, driver).click();
         logger.info("Entered Operation System" + operationSystem);
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceMachineClass(String machineClass) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorMachineClass, driver).click();
+        waitElementToBeClickable(locatorMachineClass, driver).click();
         positionElement(universalLocatorDown, machineClass, driver).click();
         logger.info("Entered Machine Class" + machineClass);
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceSeries(String series) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorSeries, driver).click();
+        waitElementToBeClickable(locatorSeries, driver).click();
         positionElement(universalLocatorDown, series, driver).click();
         logger.info("Entered Series" + series);
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceMachineType(String type) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorMachineType, driver).click();
+        waitElementToBeClickable(locatorMachineType, driver).click();
         positionElement(universalLocatorDown, type, driver).click();
         logger.info("Entered MachineType" + type);
         return this;
     }
 
     public CreateHomeGooglePageCalculator addGPUs() {
-        waitBeforeChoosingMenuOptionAfterClick(locatorAddGPUs, driver).click();
+        waitElementToBeClickable(locatorAddGPUs, driver).click();
         logger.info("Entered addGPUs");
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceNumberGPUs(String number) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorNumberGPUs, driver).click();
+        waitElementToBeClickable(locatorNumberGPUs, driver).click();
         positionElement(universalLocatorDown, number, driver).click();
         logger.info("Entered Number GPUs" + number);
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceTypeGPU(String type) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorTypeGPUs, driver).click();
+        waitElementToBeClickable(locatorTypeGPUs, driver).click();
         positionElement(universalLocatorDown, type, driver).click();
         logger.info("Entered Type GPU" + type);
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceLocalSSD(String local) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorLocalSSD, driver).click();
+        waitElementToBeClickable(locatorLocalSSD, driver).click();
         positionElement(universalLocatorDown, local, driver).click();
         logger.info("Entered Local SSD" + local);
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceDatacenterLocation(String center) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorDataCenter, driver).click();
+        waitElementToBeClickable(locatorDataCenter, driver).click();
         positionElement(universalLocatorDown, center, driver).click();
         logger.info("Entered Datacenter Location" + center);
         return this;
     }
 
     public CreateHomeGooglePageCalculator choiceCommittedUsage(String period) {
-        waitBeforeChoosingMenuOptionAfterClick(locatorCommittedUsage, driver).click();
+        waitElementToBeClickable(locatorCommittedUsage, driver).click();
         positionElement(universalLocatorDown, period, driver).click();
         logger.info("Entered Committed Usage" + period);
         return this;
     }
 
     public CreateHomeGooglePageCalculator pressAddToEstimate() {
-        waitBeforeChoosingMenuOptionAfterClick(locatorAddToEstimate, driver).click();
+        waitElementToBeClickable(locatorAddToEstimate, driver).click();
         logger.info("Entered Add To Estimate");
         return this;
     }
 
     public CreateHomeGooglePageCalculator saveResultEstimate() {
-        data.setCurrentPriceInCalculator(result.getText());
+        saveResult(result);
         logger.info("Entered save Result Estimate");
         return this;
     }
 
     public CreateHomeGooglePageCalculator pressButtonEmailEstimate() {
-        waitBeforeChoosingMenuOptionAfterClick(locatorPressButtonEmailEstimate, driver).click();
+        waitElementToBeClickable(locatorPressButtonEmailEstimate, driver).click();
         logger.info("Entered press Button EmailEstimate");
         return this;
     }
@@ -202,14 +198,14 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     }
 
     public CreateHomeGooglePageCalculator enterEmail() {
-        WebElement position = waitBeforeChoosingMenuOptionAfterClick(locatorEnterEmail, driver);
+        WebElement position = waitElementToBeClickable(locatorEnterEmail, driver);
         position.sendKeys(Keys.LEFT_CONTROL, "v");
         logger.info("enter Email");
         return this;
     }
 
     public CreateHomeGooglePageCalculator pressButtonSendEmail() {
-        waitBeforeChoosingMenuOptionAfterClick(locatorButtonSendEmail, driver).click();
+        waitElementToBeClickable(locatorButtonSendEmail, driver).click();
         logger.info("press Button Send Email");
         return this;
     }

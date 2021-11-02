@@ -1,17 +1,14 @@
 package page;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import static utils.TabsUtils.openNewTab;
-import static waits.CustomWebElementWaits.waitBeforeChoosingMenuOptionAfterClick;
+import static waits.CustomWebElementWaits.waitElementToBeClickable;
 
 public class EmailEstimatePage extends AbstractPage {
-    private final Logger logger = LogManager.getRootLogger();
     private static final String HOME_PAGE_URL = "https://tempmail.io/ru/";
 
     @FindBy(xpath = "//a[@onclick='copyToClipboard()']")
@@ -36,7 +33,7 @@ public class EmailEstimatePage extends AbstractPage {
     }
 
     public EmailEstimatePage copyEmailAddress() {
-        waitBeforeChoosingMenuOptionAfterClick(linkCopyRandomAddress, driver).click();
+        waitElementToBeClickable(linkCopyRandomAddress, driver).click();
         logger.info("copy Email Address");
         return this;
     }
@@ -48,7 +45,7 @@ public class EmailEstimatePage extends AbstractPage {
     }
 
     public EmailEstimatePage pressCheckMailButton() {
-        waitBeforeChoosingMenuOptionAfterClick(locatorCheckEmail, driver).click();
+        waitElementToBeClickable(locatorCheckEmail, driver).click();
         logger.info("press Check Mail Button");
         return this;
     }

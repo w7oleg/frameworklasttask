@@ -3,6 +3,7 @@ page\EmailEstimatePage.class
 waits\CustomConditions.class
 utils\PingUtils.class
 waits\CustomConditions$1.class
+utils\SaveUtils.class
 page\GoogleSearchResultPage.class
 test\HomePagesAvailableTest.class
 page\AbstractPage.class
@@ -10,7 +11,6 @@ utils\TestListener.class
 test\GoogleCloudTest.class
 test\CommonConditions.class
 utils\TabsUtils.class
-resources\GooglePageResources.class
 model\InstanceForm.class
 utils\ComputeEngineUtils.class
 utils\LocatorUtils.class
