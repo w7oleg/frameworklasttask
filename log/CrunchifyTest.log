@@ -577,3 +577,24 @@
 2021-11-01 20:36:51 [main] INFO  :213 - press Button Send Email
 2021-11-01 20:36:51 [main] INFO  :219 - return to Page Email
 2021-11-01 20:37:00 [main] INFO  :52 - press Check Mail Button
+2021-11-04 13:11:54 [main] INFO  :27 - page opened
+2021-11-04 13:11:57 [main] INFO  :36 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-04 13:14:55 [main] INFO  :27 - page opened
+2021-11-04 13:14:56 [main] INFO  :36 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-04 13:15:34 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-11-04 13:15:51 [main] INFO  :95 - Moved to PricingCalculatorPageFrame
+2021-11-04 13:15:53 [main] INFO  :103 - Entered instances
+2021-11-04 13:18:41 [main] INFO  :27 - page opened
+2021-11-04 13:18:47 [main] INFO  :36 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-04 13:42:23 [main] INFO  :27 - page opened
+2021-11-04 13:42:25 [main] INFO  :36 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-04 13:42:51 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-11-04 13:43:11 [main] INFO  :95 - Moved to PricingCalculatorPageFrame
+2021-11-04 13:43:11 [main] INFO  :103 - Entered instances
+2021-11-04 13:43:12 [main] INFO  :110 - Entered Operation Systemfree
+2021-11-04 13:43:13 [main] INFO  :117 - Entered Machine Classregular
+2021-11-04 13:43:14 [main] INFO  :124 - Entered Seriesn1
+2021-11-04 13:43:15 [main] INFO  :131 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-04 13:43:15 [main] INFO  :137 - Entered addGPUs
+2021-11-04 13:43:16 [main] INFO  :144 - Entered Number GPUs1
+2021-11-04 13:43:17 [main] INFO  :151 - Entered Type GPUNVIDIA_TESLA_V100

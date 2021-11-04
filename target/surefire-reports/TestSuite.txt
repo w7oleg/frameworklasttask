@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 89.758 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 144.23 s <<< FAILURE! - in TestSuite
+test.GoogleCloudTest.checkEmailEstimateCost  Time elapsed: 101.683 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (521, 825)
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '4.0.0-beta-1', revision: '9c03156c2b'
+System info: host: 'DESKTOP-SOPHNU0', ip: '192.168.200.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ffa5c0431e8b05eb4f0b743034d37eb, clickElement {id=4b25be83-66c3-451c-864a-6a3cbb0ff654}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\UZER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49780}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7ffa5c0431e8b05eb4f0b743034d37eb)] -> xpath: //md-select[@placeholder='Local SSD']]
+Session ID: 7ffa5c0431e8b05eb4f0b743034d37eb
+	at test.GoogleCloudTest.checkEmailEstimateCost(GoogleCloudTest.java:30)
+
