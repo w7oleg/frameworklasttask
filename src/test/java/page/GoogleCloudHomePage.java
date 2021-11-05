@@ -33,7 +33,7 @@ public class GoogleCloudHomePage extends AbstractPage {
         position.click();
         position.sendKeys("Google Cloud Platform Pricing Calculator"/*InstanceForm.getInputTextForString()*/);
         position.sendKeys(Keys.ENTER);
-        logger.info("searching" + InstanceForm.getInputTextForString());
+        logger.info("searching" + "Google Cloud Platform Pricing Calculator"/*InstanceForm.getInputTextForString()*/);
         return new GoogleSearchResultPage(driver);
     }
 }
