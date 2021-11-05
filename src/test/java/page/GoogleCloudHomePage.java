@@ -11,7 +11,7 @@ import static waits.CustomWebElementWaits.waitElementToBeClickable;
 
 public class GoogleCloudHomePage extends AbstractPage {
 
-    private static final String HOME_PAGE_URL = "cloud.google.com/";
+    private static final String HOME_PAGE_URL = "cloud.google.com";
 
     @FindBy(xpath = "//div[@class='devsite-searchbox']/input")
     private WebElement elementInputText;
