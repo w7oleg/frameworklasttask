@@ -1,7 +1,7 @@
 package model;
 
 public class InstanceForm {
-    private static String InputTextForString;
+
     private static String choiceNumberOfInstances;
     private String choiceOperationSystem;
     private String choiceMachineClass;
@@ -11,15 +11,7 @@ public class InstanceForm {
     private String choiceTypeGPU;
     private String choiceLocalSSD;
     private String choiceDatacenterLocation;
-    private String choiceCommittedUsage;
-
-    public static String getInputTextForString() {
-        return InputTextForString;
-    }
-
-    public static void setInputTextForString(String inputTextForString) {
-        InputTextForString = inputTextForString;
-    }
+    private String choiceCommittedUsage;  
 
     public static String getChoiceNumberOfInstances() {
         return choiceNumberOfInstances;

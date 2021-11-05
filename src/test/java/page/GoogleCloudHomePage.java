@@ -27,13 +27,13 @@ public class GoogleCloudHomePage extends AbstractPage {
         logger.info("page opened");
         return this;
     }
-
+    String text= "Google Cloud Platform Pricing Calculator";
     public GoogleSearchResultPage fillSearchInput() {
         WebElement position = waitElementToBeClickable(elementInputText, driver);
         position.click();
-        position.sendKeys("Google Cloud Platform Pricing Calculator"/*InstanceForm.getInputTextForString()*/);
+        position.sendKeys(text);
         position.sendKeys(Keys.ENTER);
-        logger.info("searching" + "Google Cloud Platform Pricing Calculator"/*InstanceForm.getInputTextForString()*/);
+        logger.info("searching" + text);
         return new GoogleSearchResultPage(driver);
     }
 }

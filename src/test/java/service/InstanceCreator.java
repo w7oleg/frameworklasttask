@@ -3,8 +3,6 @@ package service;
 import model.InstanceForm;
 
 public class InstanceCreator {
-    private static final String SEARCH_QUERY = "testdata.instanceForm.search-query";
-    private static final String INPUT_TEXT = "testdata.instanceForm.text-input";
     private static final String NUMBER_OF_INSTANCES = "testdata.instanceForm.number";
     private static final String OPERATION_SYSTEM = "testdata.instanceForm.os";
     private static final String MACHINE_CLASS = "testdata.instanceForm.machine-class";
@@ -18,8 +16,7 @@ public class InstanceCreator {
 
     public static InstanceForm getDataEstimateForm() {
         InstanceForm meaningEstimateForm = new InstanceForm();
-      //  meaningEstimateForm.setInputTextForString(TestDataReader.getTestData(INPUT_TEXT));
-    //    meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
+        meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
         meaningEstimateForm.setChoiceDatacenterLocation(TestDataReader.getTestData(DATA_CENTER_LOCATION));
         meaningEstimateForm.setChoiceLocalSSD(TestDataReader.getTestData(LOCAL_SSD));
         meaningEstimateForm.setChoiceMachineClass(TestDataReader.getTestData(MACHINE_CLASS));
