@@ -10,10 +10,11 @@ import service.InstanceCreator;
 
 public class GoogleCloudTest extends CommonConditions {
 
-    InstanceForm instanceForm = new InstanceCreator().getDataEstimateForm();
+
     @Test(description = "get a letter with the results of processing the request")
 
     public void checkEmailEstimateCost() {
+        InstanceForm instanceForm = new InstanceCreator().getDataEstimateForm();
         String verificationCalculationResultsReceivedEmail = new GoogleCloudHomePage(driver)
                 .openPage()
                 .fillSearchInput()
