@@ -13,7 +13,8 @@ public class GoogleCloudTest extends CommonConditions {
     @Test(description = "get a letter with the results of processing the request")
 
     public void checkEmailEstimateCost() {
-        InstanceForm instanceForm = new InstanceCreator().getDataEstimateForm();
+        new InstanceCreator();
+        InstanceForm instanceForm = InstanceCreator.getDataEstimateForm();
         String verificationCalculationResultsReceivedEmail = new GoogleCloudHomePage(driver)
                 .openPage()
                 .fillSearchInput()
