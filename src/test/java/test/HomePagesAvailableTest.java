@@ -17,7 +17,7 @@ public class HomePagesAvailableTest {
 
     @Test(description = "Smoke")
     public void checkAvailableTemporaryEmailPage() {
-        String TEMPORARY_EMAIL_HOME_PAGE_URL = "tempmail.io/ru";
+        String TEMPORARY_EMAIL_HOME_PAGE_URL = "tempmail.io";
         boolean expectedPagesAvailable = new PingUtils().pingHomePages(TEMPORARY_EMAIL_HOME_PAGE_URL, 80, 5000);
 
         Assert.assertTrue(expectedPagesAvailable, "Page isn't available");
