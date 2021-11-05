@@ -13,15 +13,15 @@ public class CustomWebElementWaits {
     private static long WAIT_TIMEOUT_SECONDS = 10;
 
     public static WebElement waitPresenceOfElementLocatedAndElementToBeClickable(By locator, WebDriver driver) {
-        WebElement position = new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+        WebElement position = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.presenceOfElementLocated(locator));
-        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(position));
         return position;
     }
 
     public static WebElement waitElementToBeClickable(WebElement element, WebDriver driver) {
-        return new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+        return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(element));
     }
 
