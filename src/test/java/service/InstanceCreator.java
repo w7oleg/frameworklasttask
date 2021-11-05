@@ -19,7 +19,7 @@ public class InstanceCreator {
     public static InstanceForm getDataEstimateForm() {
         InstanceForm meaningEstimateForm = new InstanceForm();
       //  meaningEstimateForm.setInputTextForString(TestDataReader.getTestData(INPUT_TEXT));
-        meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
+    //    meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
         meaningEstimateForm.setChoiceDatacenterLocation(TestDataReader.getTestData(DATA_CENTER_LOCATION));
         meaningEstimateForm.setChoiceLocalSSD(TestDataReader.getTestData(LOCAL_SSD));
         meaningEstimateForm.setChoiceMachineClass(TestDataReader.getTestData(MACHINE_CLASS));
