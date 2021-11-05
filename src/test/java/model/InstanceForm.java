@@ -2,7 +2,7 @@ package model;
 
 public class InstanceForm {
 
-    private static String choiceNumberOfInstances;
+ //   private static String choiceNumberOfInstances;
     private String choiceOperationSystem;
     private String choiceMachineClass;
     private String choiceSeries;
@@ -15,9 +15,9 @@ public class InstanceForm {
 
 
 
-    public static void setChoiceNumberOfInstances(String choiceNumberOfInstances) {
-        InstanceForm.choiceNumberOfInstances = choiceNumberOfInstances;
-    }
+//    public static void setChoiceNumberOfInstances(String choiceNumberOfInstances) {
+//        InstanceForm.choiceNumberOfInstances = choiceNumberOfInstances;
+//    }
 
     public String getChoiceOperationSystem() {
         return choiceOperationSystem;
