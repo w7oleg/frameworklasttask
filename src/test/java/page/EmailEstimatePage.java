@@ -9,7 +9,7 @@ import static utils.TabsUtils.openNewTab;
 import static waits.CustomWebElementWaits.waitElementToBeClickable;
 
 public class EmailEstimatePage extends AbstractPage {
-    private static final String HOME_PAGE_URL = "https://tempmail.io/ru/";
+    private static final String HOME_PAGE_URL = "tempmail.io/ru/";
 
     @FindBy(xpath = "//a[@onclick='copyToClipboard()']")
     private WebElement linkCopyRandomAddress;
