@@ -11,7 +11,7 @@ public class InstanceForm {
     private String choiceTypeGPU;
     private String choiceLocalSSD;
     private String choiceDatacenterLocation;
-    private String choiceCommittedUsage;  
+    private String choiceCommittedUsage;
 
     public static String getChoiceNumberOfInstances() {
         return choiceNumberOfInstances;
