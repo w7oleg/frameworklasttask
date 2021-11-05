@@ -30,7 +30,7 @@ public class GoogleCloudTest extends CommonConditions {
                 .choiceTypeGPU(instanceForm.getChoiceTypeGPU())
                 .choiceLocalSSD(instanceForm.getChoiceLocalSSD())
                 .choiceDatacenterLocation(instanceForm.getChoiceDatacenterLocation())
-                .choiceCommittedUsage(instanceForm.getChoiceCommittedUsage())
+                .choiceCommittedUsage("1"/*instanceForm.getChoiceCommittedUsage()*/)
                 .pressAddToEstimate()
                 .saveResultEstimate()
                 .pressButtonEmailEstimate()

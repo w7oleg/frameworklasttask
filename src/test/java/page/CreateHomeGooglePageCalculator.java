@@ -98,7 +98,7 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     public CreateHomeGooglePageCalculator choiceNumberOfInstances() {
         WebElement position = waitElementToBeClickable(locatorNumberInstances, driver);
         position.click();
-        position.sendKeys(InstanceForm.getChoiceNumberOfInstances());
+        position.sendKeys("4"/*InstanceForm.getChoiceNumberOfInstances()*/);
         logger.info("Entered instances");
         return this;
     }
