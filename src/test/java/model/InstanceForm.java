@@ -13,9 +13,7 @@ public class InstanceForm {
     private String choiceDatacenterLocation;
     private String choiceCommittedUsage;
 
-    public static String getChoiceNumberOfInstances() {
-        return choiceNumberOfInstances;
-    }
+
 
     public static void setChoiceNumberOfInstances(String choiceNumberOfInstances) {
         InstanceForm.choiceNumberOfInstances = choiceNumberOfInstances;
@@ -85,9 +83,7 @@ public class InstanceForm {
         this.choiceDatacenterLocation = choiceDatacenterLocation;
     }
 
-    public String getChoiceCommittedUsage() {
-        return choiceCommittedUsage;
-    }
+
 
     public void setChoiceCommittedUsage(String choiceCommittedUsage) {
         this.choiceCommittedUsage = choiceCommittedUsage;

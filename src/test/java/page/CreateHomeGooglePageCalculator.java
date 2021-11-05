@@ -1,6 +1,5 @@
 package page;
 
-import model.InstanceForm;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +10,8 @@ import utils.TabsUtils;
 import static utils.ComputeEngineUtils.active;
 import static utils.LocatorUtils.positionElement;
 import static utils.SaveResultUtils.saveResult;
-import static waits.CustomWebElementWaits.*;
+import static waits.CustomWebElementWaits.waitElementToBeClickable;
+import static waits.CustomWebElementWaits.waitPageLoad;
 
 public class CreateHomeGooglePageCalculator extends AbstractPage {
 
