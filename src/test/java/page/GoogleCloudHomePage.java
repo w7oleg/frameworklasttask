@@ -31,9 +31,9 @@ public class GoogleCloudHomePage extends AbstractPage {
     public GoogleSearchResultPage fillSearchInput() {
         WebElement position = waitElementToBeClickable(elementInputText, driver);
         position.click();
-        position.sendKeys(InstanceForm.getInputTextForString());
+        position.sendKeys("Google Cloud Platform Pricing Calculator"/*InstanceForm.getInputTextForString()*/);
         position.sendKeys(Keys.ENTER);
         logger.info("searching" + InstanceForm.getInputTextForString());
-        return new GoogleSearchResultPage(driver/*, data*/);
+        return new GoogleSearchResultPage(driver);
     }
 }
