@@ -42,7 +42,7 @@ public class GoogleCloudTest extends CommonConditions {
                 .returnToPageEmail()
                 .pressCheckMailButton()
                 .thisComparisonResultsReceivedEmailWithDataSite();
-        Assert.assertEquals(ProcessData.getCurrentPriceInCalculator(), verificationCalculationResultsReceivedEmail
+        Assert.assertEquals(verificationCalculationResultsReceivedEmail, ProcessData.getCurrentPriceInCalculator()
                 , "the data received by mail does not coincide with the data received in the calculator");
     }
 }
