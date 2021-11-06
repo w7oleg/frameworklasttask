@@ -15,19 +15,19 @@ public class InstanceCreator {
   //  private static final String COMMITTED_USAGE = "testdata.instanceForm.committed-sage";
 
     public static InstanceForm getDataEstimateForm() {
-        new InstanceForm();
-        InstanceForm meaningEstimateForm = new InstanceForm();
+//        new InstanceForm();
+//        InstanceForm meaningEstimateForm = new InstanceForm();
    //     meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
-        meaningEstimateForm.setChoiceDatacenterLocation(TestDataReader.getTestData(DATA_CENTER_LOCATION));
-        meaningEstimateForm.setChoiceLocalSSD(TestDataReader.getTestData(LOCAL_SSD));
-        meaningEstimateForm.setChoiceMachineClass(TestDataReader.getTestData(MACHINE_CLASS));
-        meaningEstimateForm.setChoiceMachineType(TestDataReader.getTestData(MACHINE_TYPE));
-        meaningEstimateForm.setChoiceNumberGPUs(TestDataReader.getTestData(NUMBER_OF_GPUS));
+        return new InstanceForm(
+       /* meaningEstimateForm.setChoiceDatacenterLocation(*/TestDataReader.getTestData(DATA_CENTER_LOCATION)/*)*/,
+        TestDataReader.getTestData(LOCAL_SSD),
+       TestDataReader.getTestData(MACHINE_CLASS),
+        TestDataReader.getTestData(MACHINE_TYPE),
+       TestDataReader.getTestData(NUMBER_OF_GPUS),
        // meaningEstimateForm.setChoiceNumberOfInstances(TestDataReader.getTestData(NUMBER_OF_INSTANCES));
-        meaningEstimateForm.setChoiceOperationSystem(TestDataReader.getTestData(OPERATION_SYSTEM));
-        meaningEstimateForm.setChoiceNumberGPUs(TestDataReader.getTestData(NUMBER_OF_GPUS));
-        meaningEstimateForm.setChoiceTypeGPU(TestDataReader.getTestData(TYPE_GPU));
-        meaningEstimateForm.setChoiceSeries(TestDataReader.getTestData(SERIES_ID));
-        return meaningEstimateForm;
+       TestDataReader.getTestData(OPERATION_SYSTEM),
+        TestDataReader.getTestData(NUMBER_OF_GPUS),
+        TestDataReader.getTestData(TYPE_GPU),
+        TestDataReader.getTestData(SERIES_ID));
     }
 }

@@ -12,6 +12,9 @@ public class InstanceForm {
     private String choiceLocalSSD;
     private String choiceDatacenterLocation;
 
+    public InstanceForm(String testData, String testData1, String testData2, String testData3, String testData4, String testData5, String testData6, String testData7, String testData8) {
+    }
+
 
 //    public static void setChoiceNumberOfInstances(String choiceNumberOfInstances) {
 //        InstanceForm.choiceNumberOfInstances = choiceNumberOfInstances;
