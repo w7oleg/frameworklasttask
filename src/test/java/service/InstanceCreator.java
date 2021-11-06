@@ -12,12 +12,12 @@ public class InstanceCreator {
     private static final String TYPE_GPU = "testdata.instanceForm.type-gpu";
     private static final String LOCAL_SSD = "testdata.instanceForm.local-ssd";
     private static final String DATA_CENTER_LOCATION = "testdata.instanceForm.datacenter";
-    private static final String COMMITTED_USAGE = "testdata.instanceForm.committed-sage";
+  //  private static final String COMMITTED_USAGE = "testdata.instanceForm.committed-sage";
 
     public static InstanceForm getDataEstimateForm() {
         new InstanceForm();
         InstanceForm meaningEstimateForm = new InstanceForm();
-        meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
+   //     meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
         meaningEstimateForm.setChoiceDatacenterLocation(TestDataReader.getTestData(DATA_CENTER_LOCATION));
         meaningEstimateForm.setChoiceLocalSSD(TestDataReader.getTestData(LOCAL_SSD));
         meaningEstimateForm.setChoiceMachineClass(TestDataReader.getTestData(MACHINE_CLASS));
