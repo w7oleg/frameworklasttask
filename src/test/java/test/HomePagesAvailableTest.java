@@ -14,7 +14,7 @@ public class HomePagesAvailableTest {
 
         Assert.assertTrue(expectedPagesAvailable, "Page isn't available");
     }
-
+//asdfgghgj
     @Test(description = "Smoke")
     public void checkAvailableTemporaryEmailPage() {
         String TEMPORARY_EMAIL_HOME_PAGE_URL = "tempmail.io";

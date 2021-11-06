@@ -15,6 +15,7 @@ public class InstanceCreator {
     private static final String COMMITTED_USAGE = "testdata.instanceForm.committed-sage";
 
     public static InstanceForm getDataEstimateForm() {
+        new InstanceForm();
         InstanceForm meaningEstimateForm = new InstanceForm();
         meaningEstimateForm.setChoiceCommittedUsage(TestDataReader.getTestData(COMMITTED_USAGE));
         meaningEstimateForm.setChoiceDatacenterLocation(TestDataReader.getTestData(DATA_CENTER_LOCATION));
