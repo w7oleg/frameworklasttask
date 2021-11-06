@@ -11,6 +11,8 @@ public class InstanceForm {
     private String choiceTypeGPU;
     private String choiceLocalSSD;
     private String choiceDatacenterLocation;
+    private String choiceCommittedUsage;
+
 
 
 //    public static void setChoiceNumberOfInstances(String choiceNumberOfInstances) {
@@ -84,6 +86,7 @@ public class InstanceForm {
 
 
     public void setChoiceCommittedUsage(String choiceCommittedUsage) {
+        this.choiceCommittedUsage = choiceCommittedUsage;
     }
 }
 
