@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 99.695 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.532 s <<< FAILURE! - in TestSuite
+test.GoogleCloudTest.checkEmailEstimateCost  Time elapsed: 38.617 s  <<< FAILURE!
+org.openqa.selenium.InvalidArgumentException: 
+invalid argument
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-SOPHNU0', ip: '192.168.100.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3fb89e5af1e5d10c472aa5915f8b9baa, get {url=tempmail.io/ru/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\UZER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58477/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fb89e5af1e5d10c472aa5915f8b9baa
+	at test.GoogleCloudTest.checkEmailEstimateCost(GoogleCloudTest.java:38)
+

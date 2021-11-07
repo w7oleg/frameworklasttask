@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
+<Configuration status="WARN">
+
+    <!-- Author:  Crunchify.com  -->
     <Appenders>
-        <Console name="Console">
-            <PatternLayout>
-                <Pattern>%d %p %c{2} [%t] %l %m%n</Pattern>
-            </PatternLayout>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
         </Console>
-        <File name="File" fileName="target/logs/github-automation.log">
-            <PatternLayout>
-                <Pattern>%d %p %c{2} [%t] %m%n</Pattern>
-            </PatternLayout>
-        </File>
+
+        <RollingFile name="RollingFile" filename="target/logs/github-automation.log"
+                     filepattern="${logPath}/%d{YYYYMMddHHmmss}-fargo.log">
+            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+
     </Appenders>
     <Loggers>
         <Root level="info">
-            <AppenderRef ref="Console"/>
-            <AppenderRef ref="File"/>
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
         </Root>
     </Loggers>
 </Configuration>

@@ -1,26 +1,19 @@
-2021-11-05 16:42:38,344 INFO  [main] page opened
-2021-11-05 16:42:38,838 INFO  [main] searchingGoogle Cloud Platform Pricing Calculator
-2021-11-05 16:43:04,626 INFO  [main] Moved to PricingCalculatorPageFrame
-2021-11-05 16:43:15,426 INFO  [main] Moved to PricingCalculatorPageFrame
-2021-11-05 16:43:15,741 INFO  [main] Entered instances
-2021-11-05 16:43:16,597 INFO  [main] Entered Operation Systemfree
-2021-11-05 16:43:17,448 INFO  [main] Entered Machine Classregular
-2021-11-05 16:43:18,311 INFO  [main] Entered Seriesn1
-2021-11-05 16:43:19,128 INFO  [main] Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
-2021-11-05 16:43:19,302 INFO  [main] Entered addGPUs
-2021-11-05 16:43:20,117 INFO  [main] Entered Number GPUs1
-2021-11-05 16:43:20,929 INFO  [main] Entered Type GPUNVIDIA_TESLA_V100
-2021-11-05 16:43:21,726 INFO  [main] Entered Local SSD2
-2021-11-05 16:43:22,588 INFO  [main] Entered Datacenter Locationeurope-west3
-2021-11-05 16:43:23,373 INFO  [main] Entered Committed Usage1
-2021-11-05 16:43:23,697 INFO  [main] Entered Add To Estimate
-2021-11-05 16:43:23,877 INFO  [main] Entered save Result Estimate
-2021-11-05 16:43:24,129 INFO  [main] Entered press Button EmailEstimate
-2021-11-05 16:43:24,308 INFO  [main] open New Tab
-2021-11-05 16:43:39,266 INFO  [main] page opened
-2021-11-05 16:43:39,447 INFO  [main] copy Email Address
-2021-11-05 16:43:39,548 INFO  [main] come back to Calculator
-2021-11-05 16:43:39,833 INFO  [main] enter Email
-2021-11-05 16:43:39,996 INFO  [main] press Button Send Email
-2021-11-05 16:43:40,060 INFO  [main] return to Page Email
-2021-11-05 16:43:50,041 INFO  [main] press Check Mail Button
+2021-11-07 09:26:48 [main] INFO  :26 - page opened
+2021-11-07 09:26:49 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-07 09:27:00 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-11-07 09:27:04 [main] INFO  :94 - Moved to PricingCalculatorPageFrame
+2021-11-07 09:27:04 [main] INFO  :102 - Entered instances
+2021-11-07 09:27:07 [main] INFO  :109 - Entered Operation Systemfree
+2021-11-07 09:27:07 [main] INFO  :116 - Entered Machine Classregular
+2021-11-07 09:27:08 [main] INFO  :123 - Entered Seriesn1
+2021-11-07 09:27:09 [main] INFO  :130 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-07 09:27:09 [main] INFO  :136 - Entered addGPUs
+2021-11-07 09:27:10 [main] INFO  :143 - Entered Number GPUs1
+2021-11-07 09:27:11 [main] INFO  :150 - Entered Type GPUNVIDIA_TESLA_V100
+2021-11-07 09:27:12 [main] INFO  :157 - Entered Local SSD2
+2021-11-07 09:27:13 [main] INFO  :164 - Entered Datacenter Locationeurope-west3
+2021-11-07 09:27:13 [main] INFO  :171 - Entered Committed Usage1
+2021-11-07 09:27:14 [main] INFO  :177 - Entered Add To Estimate
+2021-11-07 09:27:14 [main] INFO  :183 - Entered save Result Estimate
+2021-11-07 09:27:14 [main] INFO  :189 - Entered press Button EmailEstimate
+2021-11-07 09:27:15 [main] INFO  :195 - open New Tab

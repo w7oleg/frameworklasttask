@@ -12,8 +12,20 @@ public class InstanceForm {
     private String choiceLocalSSD;
     private String choiceDatacenterLocation;
 
-    public InstanceForm(String testData, String testData1, String testData2, String testData3, String testData4, String testData5, String testData6, String testData7, String testData8) {
+    public InstanceForm(String choiceOperationSystem, String choiceMachineClass, String choiceSeries, String choiceMachineType,
+                        String choiceNumberGPUs, String choiceTypeGPU, String choiceLocalSSD, String choiceDatacenterLocation) {
+        this.choiceOperationSystem = choiceOperationSystem;
+        this.choiceMachineClass = choiceMachineClass;
+        this.choiceSeries = choiceSeries;
+        this.choiceMachineType = choiceMachineType;
+        this.choiceNumberGPUs = choiceNumberGPUs;
+        this.choiceTypeGPU = choiceTypeGPU;
+        this.choiceLocalSSD = choiceLocalSSD;
+        this.choiceDatacenterLocation = choiceDatacenterLocation;
     }
+//    public InstanceForm(String choiceOperationSystem, String testData1, String testData2, String testData3, String testData4,
+//                        String testData5, String testData6, String testData7) {
+//    }
 
 
 //    public static void setChoiceNumberOfInstances(String choiceNumberOfInstances) {
