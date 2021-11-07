@@ -1,19 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.326 s <<< FAILURE! - in TestSuite
-test.GoogleCloudTest.checkEmailEstimateCost  Time elapsed: 53.156 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='email_list']/div[2]/div/div/a/span[2]' (tried for 10 second(s) with 500 milliseconds interval)
-	at test.GoogleCloudTest.checkEmailEstimateCost(GoogleCloudTest.java:45)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='email_list']/div[2]/div/div/a/span[2]"}
-  (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-SOPHNU0', ip: '192.168.100.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5a0f914b6dbeaf58ca5b0ac207de26d2, findElement {using=xpath, value=//*[@id='email_list']/div[2]/div/div/a/span[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\UZER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58121/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a0f914b6dbeaf58ca5b0ac207de26d2
-	at test.GoogleCloudTest.checkEmailEstimateCost(GoogleCloudTest.java:45)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 88.965 s - in TestSuite

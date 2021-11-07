@@ -1,25 +1,26 @@
-2021-11-07 14:15:46 [main] INFO  :26 - page opened
-2021-11-07 14:15:47 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
-2021-11-07 14:15:56 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
-2021-11-07 14:16:00 [main] INFO  :95 - Moved to PricingCalculatorPageFrame
-2021-11-07 14:16:01 [main] INFO  :102 - Entered instances
-2021-11-07 14:16:01 [main] INFO  :106 - Entered Operation Systemfree
-2021-11-07 14:16:02 [main] INFO  :110 - Entered Machine Classregular
-2021-11-07 14:16:03 [main] INFO  :115 - Entered Seriesn1
-2021-11-07 14:16:04 [main] INFO  :120 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
-2021-11-07 14:16:04 [main] INFO  :123 - Entered addGPUs
-2021-11-07 14:16:05 [main] INFO  :127 - Entered Number GPUs1
-2021-11-07 14:16:06 [main] INFO  :131 - Entered Type GPUCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
-2021-11-07 14:16:08 [main] INFO  :135 - Entered Local SSD2
-2021-11-07 14:16:09 [main] INFO  :139 - Entered Datacenter Locationeurope-west3
-2021-11-07 14:16:10 [main] INFO  :143 - Entered Committed Usage1
-2021-11-07 14:16:10 [main] INFO  :227 - Entered Add To Estimate
-2021-11-07 14:16:10 [main] INFO  :233 - Entered save Result Estimate
-2021-11-07 14:16:10 [main] INFO  :239 - Entered press Button EmailEstimate
-2021-11-07 14:16:10 [main] INFO  :245 - open New Tab
-2021-11-07 14:16:21 [main] INFO  :31 - page opened
-2021-11-07 14:16:21 [main] INFO  :37 - copy Email Address
-2021-11-07 14:16:21 [main] INFO  :43 - come back to Calculator
-2021-11-07 14:16:22 [main] INFO  :252 - enter Email
-2021-11-07 14:16:22 [main] INFO  :258 - press Button Send Email
-2021-11-07 14:16:22 [main] INFO  :264 - return to Page Email
+2021-11-07 18:16:17 [main] INFO  :26 - page opened
+2021-11-07 18:16:18 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-07 18:16:41 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-11-07 18:16:49 [main] INFO  :95 - Moved to PricingCalculatorPageFrame
+2021-11-07 18:16:49 [main] INFO  :102 - Entered instances
+2021-11-07 18:16:51 [main] INFO  :106 - Entered Operation Systemfree
+2021-11-07 18:16:51 [main] INFO  :110 - Entered Machine Classregular
+2021-11-07 18:16:52 [main] INFO  :115 - Entered Seriesn1
+2021-11-07 18:16:53 [main] INFO  :120 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-07 18:16:53 [main] INFO  :123 - Entered addGPUs
+2021-11-07 18:16:55 [main] INFO  :127 - Entered Number GPUs1
+2021-11-07 18:16:55 [main] INFO  :131 - Entered Type GPUCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-07 18:16:56 [main] INFO  :135 - Entered Local SSD2
+2021-11-07 18:16:57 [main] INFO  :139 - Entered Datacenter Locationeurope-west3
+2021-11-07 18:16:57 [main] INFO  :143 - Entered Committed Usage1
+2021-11-07 18:16:58 [main] INFO  :227 - Entered Add To Estimate
+2021-11-07 18:16:58 [main] INFO  :233 - Entered save Result Estimate
+2021-11-07 18:16:58 [main] INFO  :239 - Entered press Button EmailEstimate
+2021-11-07 18:16:59 [main] INFO  :245 - open New Tab
+2021-11-07 18:17:12 [main] INFO  :31 - page opened
+2021-11-07 18:17:12 [main] INFO  :37 - copy Email Address
+2021-11-07 18:17:12 [main] INFO  :43 - come back to Calculator
+2021-11-07 18:17:12 [main] INFO  :252 - enter Email
+2021-11-07 18:17:13 [main] INFO  :258 - press Button Send Email
+2021-11-07 18:17:13 [main] INFO  :264 - return to Page Email
+2021-11-07 18:17:22 [main] INFO  :49 - press Check Mail Button
