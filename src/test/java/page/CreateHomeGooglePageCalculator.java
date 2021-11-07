@@ -95,10 +95,10 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceNumberOfInstances() {
+    public CreateHomeGooglePageCalculator choiceNumberOfInstances(String number) {
         WebElement position = waitElementToBeClickable(locatorNumberInstances, driver);
         position.click();
-        position.sendKeys("4"/*InstanceForm.getChoiceNumberOfInstances()*/);
+        position.sendKeys(number);
         logger.info("Entered instances");
         return this;
     }
@@ -193,7 +193,7 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
     public EmailEstimatePage openNewTab() {
         TabsUtils.openNewTab(1, driver);
         logger.info("open New Tab");
-        return new EmailEstimatePage(driver);
+        return new EmailEstimatePage(driver/*, data*/);
     }
 
     public CreateHomeGooglePageCalculator enterEmail() {

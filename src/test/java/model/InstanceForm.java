@@ -2,7 +2,9 @@ package model;
 
 public class InstanceForm {
 
- //   private static String choiceNumberOfInstances;
+
+
+    private String choiceNumberOfInstances;
     private String choiceOperationSystem;
     private String choiceMachineClass;
     private String choiceSeries;
@@ -12,8 +14,13 @@ public class InstanceForm {
     private String choiceLocalSSD;
     private String choiceDatacenterLocation;
 
-    public InstanceForm(String choiceOperationSystem, String choiceMachineClass, String choiceSeries, String choiceMachineType,
-                        String choiceNumberGPUs, String choiceTypeGPU, String choiceLocalSSD, String choiceDatacenterLocation) {
+
+
+    private String choiceCommittedUsage;
+
+    public InstanceForm(String choiceNumberOfInstances, String choiceOperationSystem, String choiceMachineClass, String choiceSeries, String choiceMachineType,
+                        String choiceNumberGPUs, String choiceTypeGPU, String choiceLocalSSD, String choiceDatacenterLocation, String choiceCommittedUsage) {
+        this.choiceNumberOfInstances= choiceNumberOfInstances;
         this.choiceOperationSystem = choiceOperationSystem;
         this.choiceMachineClass = choiceMachineClass;
         this.choiceSeries = choiceSeries;
@@ -22,6 +29,7 @@ public class InstanceForm {
         this.choiceTypeGPU = choiceTypeGPU;
         this.choiceLocalSSD = choiceLocalSSD;
         this.choiceDatacenterLocation = choiceDatacenterLocation;
+        this.choiceCommittedUsage=choiceCommittedUsage;
     }
 //    public InstanceForm(String choiceOperationSystem, String testData1, String testData2, String testData3, String testData4,
 //                        String testData5, String testData6, String testData7) {
@@ -31,6 +39,9 @@ public class InstanceForm {
 //    public static void setChoiceNumberOfInstances(String choiceNumberOfInstances) {
 //        InstanceForm.choiceNumberOfInstances = choiceNumberOfInstances;
 //    }
+public String getChoiceNumberOfInstances() {
+    return choiceNumberOfInstances;
+}
 
     public String getChoiceOperationSystem() {
         return choiceOperationSystem;
@@ -96,6 +107,9 @@ public class InstanceForm {
         this.choiceDatacenterLocation = choiceDatacenterLocation;
     }
 
+    public String getChoiceCommittedUsage() {
+        return choiceCommittedUsage;
+    }
 
 
 //    public void setChoiceCommittedUsage(String choiceCommittedUsage) {
