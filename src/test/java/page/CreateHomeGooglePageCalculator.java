@@ -1,5 +1,6 @@
 package page;
 
+import model.InstanceForm;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -94,83 +95,132 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
         logger.info("Moved to PricingCalculatorPageFrame");
         return this;
     }
-
-    public CreateHomeGooglePageCalculator choiceNumberOfInstances(String number) {
+    public CreateHomeGooglePageCalculator fillComputeEngineForm(InstanceForm instance) {
         WebElement position = waitElementToBeClickable(locatorNumberInstances, driver);
         position.click();
-        position.sendKeys(number);
+        position.sendKeys(instance.getChoiceNumberOfInstances());
         logger.info("Entered instances");
-        return this;
-    }
 
-    public CreateHomeGooglePageCalculator choiceOperationSystem(String operationSystem) {
         waitElementToBeClickable(locatorOperationSystem, driver).click();
-        positionElement(universalLocatorDown, operationSystem, driver).click();
-        logger.info("Entered Operation System" + operationSystem);
-        return this;
-    }
+        positionElement(universalLocatorDown, instance.getChoiceOperationSystem(), driver).click();
+        logger.info("Entered Operation System" + instance.getChoiceOperationSystem());
 
-    public CreateHomeGooglePageCalculator choiceMachineClass(String machineClass) {
         waitElementToBeClickable(locatorMachineClass, driver).click();
-        positionElement(universalLocatorDown, machineClass, driver).click();
-        logger.info("Entered Machine Class" + machineClass);
-        return this;
-    }
+        positionElement(universalLocatorDown, instance.getChoiceMachineClass(), driver).click();
+        logger.info("Entered Machine Class" + instance.getChoiceMachineClass());
 
-    public CreateHomeGooglePageCalculator choiceSeries(String series) {
+
         waitElementToBeClickable(locatorSeries, driver).click();
-        positionElement(universalLocatorDown, series, driver).click();
-        logger.info("Entered Series" + series);
-        return this;
-    }
+        positionElement(universalLocatorDown, instance.getChoiceSeries(), driver).click();
+        logger.info("Entered Series" + instance.getChoiceSeries());
 
-    public CreateHomeGooglePageCalculator choiceMachineType(String type) {
+
         waitElementToBeClickable(locatorMachineType, driver).click();
-        positionElement(universalLocatorDown, type, driver).click();
-        logger.info("Entered MachineType" + type);
-        return this;
-    }
+        positionElement(universalLocatorDown, instance.getChoiceMachineType(), driver).click();
+        logger.info("Entered MachineType" + instance.getChoiceMachineType());
 
-    public CreateHomeGooglePageCalculator addGPUs() {
         waitElementToBeClickable(locatorAddGPUs, driver).click();
         logger.info("Entered addGPUs");
-        return this;
-    }
 
-    public CreateHomeGooglePageCalculator choiceNumberGPUs(String number) {
         waitElementToBeClickable(locatorNumberGPUs, driver).click();
-        positionElement(universalLocatorDown, number, driver).click();
-        logger.info("Entered Number GPUs" + number);
-        return this;
-    }
+        positionElement(universalLocatorDown, instance.getChoiceNumberGPUs(), driver).click();
+        logger.info("Entered Number GPUs" + instance.getChoiceNumberGPUs());
 
-    public CreateHomeGooglePageCalculator choiceTypeGPU(String type) {
         waitElementToBeClickable(locatorTypeGPUs, driver).click();
-        positionElement(universalLocatorDown, type, driver).click();
-        logger.info("Entered Type GPU" + type);
-        return this;
-    }
+        positionElement(universalLocatorDown, instance.getChoiceTypeGPU(), driver).click();
+        logger.info("Entered Type GPU" +instance.getChoiceMachineType());
 
-    public CreateHomeGooglePageCalculator choiceLocalSSD(String local) {
         waitElementToBeClickable(locatorLocalSSD, driver).click();
-        positionElement(universalLocatorDown, local, driver).click();
-        logger.info("Entered Local SSD" + local);
-        return this;
-    }
+        positionElement(universalLocatorDown, instance.getChoiceLocalSSD(), driver).click();
+        logger.info("Entered Local SSD" + instance.getChoiceLocalSSD());
 
-    public CreateHomeGooglePageCalculator choiceDatacenterLocation(String center) {
         waitElementToBeClickable(locatorDataCenter, driver).click();
-        positionElement(universalLocatorDown, center, driver).click();
-        logger.info("Entered Datacenter Location" + center);
+        positionElement(universalLocatorDown, instance.getChoiceDatacenterLocation(), driver).click();
+        logger.info("Entered Datacenter Location" + instance.getChoiceDatacenterLocation());
+
+        waitElementToBeClickable(locatorCommittedUsage, driver).click();
+        positionElement(universalLocatorDown, instance.getChoiceCommittedUsage(), driver).click();
+        logger.info("Entered Committed Usage" + instance.getChoiceCommittedUsage());
+
         return this;
     }
 
-    public CreateHomeGooglePageCalculator choiceCommittedUsage(String period) {
-        waitElementToBeClickable(locatorCommittedUsage, driver).click();
-        positionElement(universalLocatorDown, period, driver).click();
-        logger.info("Entered Committed Usage" + period);
-        return this;
-    }
+//    public CreateHomeGooglePageCalculator choiceNumberOfInstances(String number) {
+//        WebElement position = waitElementToBeClickable(locatorNumberInstances, driver);
+//        position.click();
+//        position.sendKeys(number);
+//        logger.info("Entered instances");
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceOperationSystem(String operationSystem) {
+//        waitElementToBeClickable(locatorOperationSystem, driver).click();
+//        positionElement(universalLocatorDown, operationSystem, driver).click();
+//        logger.info("Entered Operation System" + operationSystem);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceMachineClass(String machineClass) {
+//        waitElementToBeClickable(locatorMachineClass, driver).click();
+//        positionElement(universalLocatorDown, machineClass, driver).click();
+//        logger.info("Entered Machine Class" + machineClass);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceSeries(String series) {
+//        waitElementToBeClickable(locatorSeries, driver).click();
+//        positionElement(universalLocatorDown, series, driver).click();
+//        logger.info("Entered Series" + series);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceMachineType(String type) {
+//        waitElementToBeClickable(locatorMachineType, driver).click();
+//        positionElement(universalLocatorDown, type, driver).click();
+//        logger.info("Entered MachineType" + type);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator addGPUs() {
+//        waitElementToBeClickable(locatorAddGPUs, driver).click();
+//        logger.info("Entered addGPUs");
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceNumberGPUs(String number) {
+//        waitElementToBeClickable(locatorNumberGPUs, driver).click();
+//        positionElement(universalLocatorDown, number, driver).click();
+//        logger.info("Entered Number GPUs" + number);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceTypeGPU(String type) {
+//        waitElementToBeClickable(locatorTypeGPUs, driver).click();
+//        positionElement(universalLocatorDown, type, driver).click();
+//        logger.info("Entered Type GPU" + type);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceLocalSSD(String local) {
+//        waitElementToBeClickable(locatorLocalSSD, driver).click();
+//        positionElement(universalLocatorDown, local, driver).click();
+//        logger.info("Entered Local SSD" + local);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceDatacenterLocation(String center) {
+//        waitElementToBeClickable(locatorDataCenter, driver).click();
+//        positionElement(universalLocatorDown, center, driver).click();
+//        logger.info("Entered Datacenter Location" + center);
+//        return this;
+//    }
+//
+//    public CreateHomeGooglePageCalculator choiceCommittedUsage(String period) {
+//        waitElementToBeClickable(locatorCommittedUsage, driver).click();
+//        positionElement(universalLocatorDown, period, driver).click();
+//        logger.info("Entered Committed Usage" + period);
+//        return this;
+//    }
 
     public CreateHomeGooglePageCalculator pressAddToEstimate() {
         waitElementToBeClickable(locatorAddToEstimate, driver).click();
