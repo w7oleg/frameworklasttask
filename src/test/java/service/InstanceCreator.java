@@ -3,16 +3,16 @@ package service;
 import model.InstanceForm;
 
 public class InstanceCreator {
-    private static final String NUMBER_OF_INSTANCES = "testdata.instanceForm.number";
-    private static final String OPERATION_SYSTEM = "testdata.instanceForm.os";
-    private static final String MACHINE_CLASS = "testdata.instanceForm.machine-class";
-    private static final String SERIES_ID = "testdata.instanceForm.series-id";
-    private static final String MACHINE_TYPE = "testdata.instanceForm.machine-type";
-    private static final String NUMBER_OF_GPUS = "testdata.instanceForm.number-of-gpus";
-    private static final String TYPE_GPU = "testdata.instanceForm.type-gpu";
-    private static final String LOCAL_SSD = "testdata.instanceForm.local-ssd";
-    private static final String DATA_CENTER_LOCATION = "testdata.instanceForm.datacenter";
-    private static final String COMMITTED_USAGE = "testdata.instanceForm.committed-sage";
+    private static final String NUMBER_OF_INSTANCES = "testdata.instanceCreator.number";
+    private static final String OPERATION_SYSTEM = "testdata.instanceCreator.os";
+    private static final String MACHINE_CLASS = "testdata.instanceCreator.machine-class";
+    private static final String SERIES_ID = "testdata.instanceCreator.series-id";
+    private static final String MACHINE_TYPE = "testdata.instanceCreator.machine-type";
+    private static final String NUMBER_OF_GPUS = "testdata.instanceCreator.number-of-gpus";
+    private static final String TYPE_GPU = "testdata.instanceCreator.type-gpu";
+    private static final String LOCAL_SSD = "testdata.instanceCreator.local-ssd";
+    private static final String DATA_CENTER_LOCATION = "testdata.instanceCreator.datacenter";
+    private static final String COMMITTED_USAGE = "testdata.instanceCreator.committed-sage";
 
     public static InstanceForm getDataEstimateForm() {
 //        new InstanceForm();
