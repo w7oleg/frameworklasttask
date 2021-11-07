@@ -14,6 +14,7 @@ public class InstanceCreator {
     private static final String DATA_CENTER_LOCATION = "testdata.instanceCreator.datacenter";
     private static final String COMMITTED_USAGE = "testdata.instanceCreator.committed-sage";
 
+
     public static InstanceForm getDataEstimateForm() {
 //        new InstanceForm();
 //        InstanceForm meaningEstimateForm = new InstanceForm();
