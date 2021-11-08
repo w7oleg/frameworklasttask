@@ -83,12 +83,6 @@
 
                     <configuration>
 
-                        <systemPropertyVariables>
-                            <browser>${browser}</browser>
-                            <surefire.suiteXmlFiles>${surefire.suiteXmlFiles}</surefire.suiteXmlFiles>
-                            <environment>${environment}</environment>
-                        </systemPropertyVariables>
-
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>

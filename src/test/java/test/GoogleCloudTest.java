@@ -11,7 +11,7 @@ import service.InstanceCreator;
 public class GoogleCloudTest extends CommonConditions {
 
 
-@Parameters("")
+
     @Test(description = "get a letter with the results of processing the request")
 
     public void checkEmailEstimateCost() {
