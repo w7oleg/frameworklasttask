@@ -82,15 +82,6 @@
                     <version>3.0.0-M5</version>
 
                     <configuration>
-                        <systemPropertyVariables>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <browser>${browser}</browser>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <surefire.suiteXmlFiles>${surefire.suiteXmlFiles}</surefire.suiteXmlFiles>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <environment>${environment}</environment>
-                        </systemPropertyVariables>
-
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
