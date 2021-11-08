@@ -82,12 +82,13 @@
                     <version>3.0.0-M5</version>
 
                     <configuration>
-                        <suiteXmlFiles>
-                            <suiteXmlFile></suiteXmlFile>
-                        </suiteXmlFiles>
-                        <systemPropertyVariables>${browser}</systemPropertyVariables>
-                        <systemPropertyVariables>${surefire.suiteXmlFiles}</systemPropertyVariables>
-                        <systemPropertyVariables>${environment}</systemPropertyVariables>
+
+                        <systemPropertyVariables>
+                            <browser>${browser}</browser>
+                            <surefire.suiteXmlFiles>${surefire.suiteXmlFiles}</surefire.suiteXmlFiles>
+                            <environment>${environment}</environment>
+                        </systemPropertyVariables>
+
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
