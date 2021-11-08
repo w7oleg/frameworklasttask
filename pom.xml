@@ -81,9 +81,9 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
                     <configuration>
-                        
-                        <suiteXmlFiles>${testngpath}</suiteXmlFiles>
-                        <environmentVariables>${environment}</environmentVariables>
+
+                        <suiteXmlFiles>testng-smoke.xml</suiteXmlFiles>
+                        <environmentVariables>dev.properties</environmentVariables>
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
