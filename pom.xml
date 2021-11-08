@@ -86,7 +86,7 @@
                             <browser>chrome</browser>
                          </systemPropertyVariables>
                         <suiteXmlFiles>
-                            <suiteXmlFile>src/test/resources/testing-smoke.xml</suiteXmlFile>
+                            <suiteXmlFile>testing-smoke.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
