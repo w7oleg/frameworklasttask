@@ -82,11 +82,11 @@
 
                     <configuration>
                         <systemPropertyVariables>
-                            <environment>${environment}</environment>
-                            <browser>${browser}</browser>
+                            <environment>src/test/resources/dev.properties</environment>
+                            <browser>chrome</browser>
                          </systemPropertyVariables>
                         <suiteXmlFiles>
-                            <suiteXmlFile>${surefire.suiteXmlFiles}</suiteXmlFile>
+                            <suiteXmlFile>src/test/resources/testing-smoke.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
