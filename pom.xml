@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+
     </properties>
 
     <dependencies>
@@ -79,8 +80,14 @@
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
-                    
+
                     <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile></suiteXmlFile>
+                        </suiteXmlFiles>
+                        <systemPropertyVariables>${browser}</systemPropertyVariables>
+                        <systemPropertyVariables>${surefire.suiteXmlFiles}</systemPropertyVariables>
+                        <systemPropertyVariables>${environment}</systemPropertyVariables>
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
