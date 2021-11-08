@@ -83,7 +83,7 @@
                     <configuration>
 
                         <suiteXmlFiles>testng-smoke.xml</suiteXmlFiles>
-                        <environmentVariables>dev.properties</environmentVariables>
+                        <excludedEnvironmentVariables>dev.properties</excludedEnvironmentVariables>
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
