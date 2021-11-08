@@ -82,7 +82,7 @@
                     <version>3.0.0-M5</version>
                     <configuration>
 
-                        <suiteXmlFiles>testng-smoke.xml</suiteXmlFiles>
+                        <suiteXmlFiles>${build.testSourceDirectory}</suiteXmlFiles>
                         <excludedEnvironmentVariables>dev.properties</excludedEnvironmentVariables>
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
