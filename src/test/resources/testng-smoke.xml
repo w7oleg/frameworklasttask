@@ -2,6 +2,7 @@
 
 <suite name="Smoke" verbose="1" >
     <test name="Smoke" >
+        <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name="test.GoogleCloudTest"/>
         </classes>
