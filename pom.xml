@@ -83,8 +83,11 @@
 
                     <configuration>
                         <systemPropertyVariables>
+                            <!--suppress UnresolvedMavenProperty -->
                             <browser>${browser}</browser>
+                            <!--suppress UnresolvedMavenProperty -->
                             <surefire.suiteXmlFiles>${surefire.suiteXmlFiles}</surefire.suiteXmlFiles>
+                            <!--suppress UnresolvedMavenProperty -->
                             <environment>${environment}</environment>
                         </systemPropertyVariables>
 
