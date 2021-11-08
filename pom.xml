@@ -82,10 +82,12 @@
 
                     <configuration>
                         <systemPropertyVariables>
-                        <browser>${browser}</browser>
-                        <surefire.suiteXmlFiles>${surefire.suiteXmlFiles}</surefire.suiteXmlFiles>
-                        <environment>${environment}</environment>
-                    </systemPropertyVariables>
+                            <environment>${environment}</environment>
+                            <browser>${browser}</browser>
+                         </systemPropertyVariables>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>${surefire.suiteXmlFiles}</suiteXmlFile>
+                        </suiteXmlFiles>
                         <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
