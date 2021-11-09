@@ -1,5 +1,6 @@
 package page;
 
+import model.ProcessData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,9 +10,10 @@ import static utils.TabsUtils.openNewTab;
 import static waits.CustomWebElementWaits.waitElementToBeClickable;
 
 public class EmailEstimatePage extends AbstractPage {
+    private String elementAddress;
     private static final String HOME_PAGE_URL = "https://tempmail.io/ru/";
 
-    @FindBy(xpath = "//a[@onclick='copyToClipboard()']")
+    @FindBy(xpath = "//input[@id='email']")
     private WebElement linkCopyRandomAddress;
 
     @FindBy(xpath = "//h3[contains(text(), 'USD')]")
@@ -33,7 +35,17 @@ public class EmailEstimatePage extends AbstractPage {
     }
 
     public EmailEstimatePage copyEmailAddress() {
-        waitElementToBeClickable(linkCopyRandomAddress, driver).click();
+
+
+
+
+        System.out.println(linkCopyRandomAddress);
+        String str=elementAddress.substring(elementAddress.lastIndexOf("value=")+1);
+        System.out.println(str);
+
+        str=str.replace(" ", "");
+
+
         logger.info("copy Email Address");
         return this;
     }
