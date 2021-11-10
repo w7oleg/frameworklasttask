@@ -11,7 +11,7 @@ public class GoogleSearchResultPage extends AbstractPage {
         super(driver);
     }
 
-    @FindBy(xpath = "//a[contains(text(), 'Google Cloud Platform Pricing')]")//a[b[contains(text(),'Calculator')]]
+    @FindBy(xpath = "//a[contains(text(), 'Google Cloud Platform Pricing')]/b[contains(text(),'Calculator')]")//a[b[contains(text(),'Calculator')]]
     private WebElement searchResult;
 
     @Override
