@@ -26,7 +26,7 @@ public class CustomWebElementWaits {
     }
 
     public static Boolean waitPageLoad(WebDriver driver){
-       return new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS).withMessage("javascript didn't load")
+       return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS)).withMessage("javascript didn't load")
                 .until(CustomConditions.jsLoadCompleted());
     }
 

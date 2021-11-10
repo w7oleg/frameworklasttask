@@ -10,4 +10,8 @@ public class LocatorUtils {
         String locator = String.format(locatorElement, variable);
         return CustomWebElementWaits. waitPresenceOfElementLocatedAndElementToBeClickable(By.xpath(locator), driver);
     }
+    public static WebElement positionElement(String locatorElement, WebDriver driver) {
+        String locator = String.format(locatorElement);
+        return CustomWebElementWaits. waitPresenceOfElementLocatedAndElementToBeClickable(By.xpath(locator), driver);
+    }
 }
