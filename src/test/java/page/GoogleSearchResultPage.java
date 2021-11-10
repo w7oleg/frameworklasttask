@@ -53,6 +53,7 @@ public class GoogleSearchResultPage extends AbstractPage {
         int checkLink = linkSearch.size();
         if (checkLink != 0) {
             WebElement position = (WebElement) driver.findElements(By.xpath(str1));
+            System.out.println(position);
             position.click();
         } else {
             positionElement(str2, driver).click();
