@@ -1,6 +1,7 @@
 package page;
 
 import model.InstanceForm;
+import model.ProcessData;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -248,7 +249,7 @@ public class CreateHomeGooglePageCalculator extends AbstractPage {
 
     public CreateHomeGooglePageCalculator enterEmail() {
         WebElement position = waitElementToBeClickable(locatorEnterEmail, driver);
-        position.sendKeys(Keys.LEFT_CONTROL, "v");
+        position.sendKeys(ProcessData.getCurrentEmailAddress());
         logger.info("enter Email");
         return this;
     }

@@ -9,42 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Smoke</th></tr>
-<tr><td><a href="#t0">Smoke</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">146 397</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Smoke</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">136 522</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.GoogleCloudTest</td><td><a href="#m0">checkEmailEstimateCost</a></td><td rowspan="1">1636468066667</td><td rowspan="1">100413</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.GoogleCloudTest</td><td><a href="#m0">checkEmailEstimateCost</a></td><td rowspan="1">1636530840421</td><td rowspan="1">126665</td></tr></tbody>
 </table>
-<h2>Smoke</h2><h3 id="m0">test.GoogleCloudTest#checkEmailEstimateCost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[contains(@class,&apos;md-active md-clickable&apos;)]//md-option[@value=&apos;free&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at waits.CustomWebElementWaits.waitPresenceOfElementLocatedAndElementToBeClickable(CustomWebElementWaits.java:17)
-	at utils.LocatorUtils.positionElement(LocatorUtils.java:11)
-	at page.CreateHomeGooglePageCalculator.fillComputeEngineForm(CreateHomeGooglePageCalculator.java:105)
-	at test.GoogleCloudTest.checkEmailEstimateCost(GoogleCloudTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;md-active md-clickable&apos;)]//md-option[@value=&apos;free&apos;]&quot;}
-  (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-SOPHNU0&apos;, ip: &apos;192.168.183.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9df76483bdb9dbc5e9ba99764a39b048, findElement {using=xpath, value=//div[contains(@class,&apos;md-active md-clickable&apos;)]//md-option[@value=&apos;free&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\UZER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62115/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9df76483bdb9dbc5e9ba99764a39b048
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 36 more
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Smoke</h2><h3 id="m0">test.GoogleCloudTest#checkEmailEstimateCost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

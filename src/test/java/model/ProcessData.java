@@ -1,9 +1,23 @@
 package model;
 
+
 public class ProcessData {
     private static String currentPriceInCalculator;
-    private static String emailAddress;
+    private static String currentEmailAddress;
+
+
+    public static String getCurrentEmailAddress() {
+        return currentEmailAddress;
+    }
+
+    public static void setCurrentEmailAddress(String currentEmailAddress) {
+        ProcessData.currentEmailAddress = currentEmailAddress;
+    }
+
+
     private String costStringDescription = "Total Estimated Cost";
+
+
 
     public String setCurrentPriceInCalculator(String currentPriceInCalculator) {
         this.currentPriceInCalculator = currentPriceInCalculator;
@@ -14,11 +28,7 @@ public class ProcessData {
         return currentPriceInCalculator;
     }
 
-    public static String getEmailAddress() {
-        return emailAddress;
-    }
 
-    public static void setEmailAddress(String emailAddress) {
-        ProcessData.emailAddress = emailAddress;
-    }
+
+
 }

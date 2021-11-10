@@ -1,5 +1,26 @@
-2021-11-09 17:28:05 [main] INFO  :26 - page opened
-2021-11-09 17:28:07 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
-2021-11-09 17:28:32 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
-2021-11-09 17:29:13 [main] INFO  :95 - Moved to PricingCalculatorPageFrame
-2021-11-09 17:29:16 [main] INFO  :102 - Entered instances
+2021-11-10 10:54:26 [main] INFO  :26 - page opened
+2021-11-10 10:54:27 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-10 10:55:03 [main] INFO  :26 - Moved to PricingCalculatorPageFrame
+2021-11-10 10:55:31 [main] INFO  :96 - Moved to PricingCalculatorPageFrame
+2021-11-10 10:55:31 [main] INFO  :103 - Entered instances
+2021-11-10 10:55:32 [main] INFO  :107 - Entered Operation Systemfree
+2021-11-10 10:55:33 [main] INFO  :111 - Entered Machine Classregular
+2021-11-10 10:55:34 [main] INFO  :116 - Entered Seriesn1
+2021-11-10 10:55:35 [main] INFO  :121 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-10 10:55:36 [main] INFO  :124 - Entered addGPUs
+2021-11-10 10:55:37 [main] INFO  :128 - Entered Number GPUs1
+2021-11-10 10:55:37 [main] INFO  :132 - Entered Type GPUCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-10 10:55:38 [main] INFO  :136 - Entered Local SSD2
+2021-11-10 10:55:39 [main] INFO  :140 - Entered Datacenter Locationeurope-west3
+2021-11-10 10:55:40 [main] INFO  :144 - Entered Committed Usage1
+2021-11-10 10:55:41 [main] INFO  :228 - Entered Add To Estimate
+2021-11-10 10:55:41 [main] INFO  :234 - Entered save Result Estimate
+2021-11-10 10:55:42 [main] INFO  :240 - Entered press Button EmailEstimate
+2021-11-10 10:55:42 [main] INFO  :246 - open New Tab
+2021-11-10 10:55:52 [main] INFO  :33 - page opened
+2021-11-10 10:55:52 [main] INFO  :41 - copy Email Address
+2021-11-10 10:55:52 [main] INFO  :47 - come back to Calculator
+2021-11-10 10:55:53 [main] INFO  :253 - enter Email
+2021-11-10 10:55:53 [main] INFO  :259 - press Button Send Email
+2021-11-10 10:55:53 [main] INFO  :265 - return to Page Email
+2021-11-10 10:56:06 [main] INFO  :53 - press Check Mail Button
