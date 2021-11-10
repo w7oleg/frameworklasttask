@@ -6,6 +6,11 @@ public class ProcessData {
     private static String currentEmailAddress;
 
 
+
+    private static String str1 = "//a[contains(text(), 'Google Cloud Platform Pricing')]";
+    public static String getStr1() {
+        return str1;
+    }
     public static String getCurrentEmailAddress() {
         return currentEmailAddress;
     }
