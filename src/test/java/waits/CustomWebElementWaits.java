@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class CustomWebElementWaits {
-    private static long WAIT_TIMEOUT_SECONDS = 40;
+    private static long WAIT_TIMEOUT_SECONDS = 20;
 
     public static WebElement waitPresenceOfElementLocatedAndElementToBeClickable(By locator, WebDriver driver) {
         WebElement position = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
