@@ -1,7 +1,5 @@
 package service;
 
-
-
 import java.util.ResourceBundle;
 
 public class TestDataReader {

@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-
 public class CustomWebElementWaits {
     private static long WAIT_TIMEOUT_SECONDS = 10;
 
@@ -25,9 +24,8 @@ public class CustomWebElementWaits {
                 .until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public static Boolean waitPageLoad(WebDriver driver){
-       return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS)).withMessage("javascript didn't load")
+    public static Boolean waitPageLoad(WebDriver driver) {
+        return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS)).withMessage("javascript didn't load")
                 .until(CustomConditions.jsLoadCompleted());
     }
-
 }

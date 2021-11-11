@@ -1,0 +1,25 @@
+2021-11-11 11:50:07 [main] INFO  :26 - page opened
+2021-11-11 11:50:08 [main] INFO  :35 - searchingGoogle Cloud Platform Pricing Calculator
+2021-11-11 11:50:59 [main] INFO  :96 - Moved to PricingCalculatorPageFrame
+2021-11-11 11:50:59 [main] INFO  :103 - Entered instances
+2021-11-11 11:51:00 [main] INFO  :107 - Entered Operation Systemfree
+2021-11-11 11:51:01 [main] INFO  :111 - Entered Machine Classregular
+2021-11-11 11:51:02 [main] INFO  :116 - Entered Seriesn1
+2021-11-11 11:51:02 [main] INFO  :121 - Entered MachineTypeCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-11 11:51:03 [main] INFO  :124 - Entered addGPUs
+2021-11-11 11:51:03 [main] INFO  :128 - Entered Number GPUs1
+2021-11-11 11:51:04 [main] INFO  :132 - Entered Type GPUCP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8
+2021-11-11 11:51:05 [main] INFO  :136 - Entered Local SSD2
+2021-11-11 11:51:06 [main] INFO  :140 - Entered Datacenter Locationeurope-west3
+2021-11-11 11:51:08 [main] INFO  :144 - Entered Committed Usage1
+2021-11-11 11:51:09 [main] INFO  :228 - Entered Add To Estimate
+2021-11-11 11:51:09 [main] INFO  :234 - Entered save Result Estimate
+2021-11-11 11:51:09 [main] INFO  :240 - Entered press Button EmailEstimate
+2021-11-11 11:51:09 [main] INFO  :246 - open New Tab
+2021-11-11 11:51:23 [main] INFO  :33 - page opened
+2021-11-11 11:51:23 [main] INFO  :41 - copy Email Address
+2021-11-11 11:51:23 [main] INFO  :47 - come back to Calculator
+2021-11-11 11:51:23 [main] INFO  :253 - enter Email
+2021-11-11 11:51:24 [main] INFO  :259 - press Button Send Email
+2021-11-11 11:51:24 [main] INFO  :265 - return to Page Email
+2021-11-11 11:51:42 [main] INFO  :53 - press Check Mail Button

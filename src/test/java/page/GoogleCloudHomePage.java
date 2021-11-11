@@ -26,7 +26,9 @@ public class GoogleCloudHomePage extends AbstractPage {
         logger.info("page opened");
         return this;
     }
-    String text= "Google Cloud Platform Pricing Calculator";
+
+    String text = "Google Cloud Platform Pricing Calculator";
+
     public GoogleSearchResultPage fillSearchInput() {
         WebElement position = waitElementToBeClickable(elementInputText, driver);
         position.click();

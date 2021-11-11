@@ -1,4 +1,4 @@
-# Created at 2021-11-11T10:10:45.763
+# Created at 2021-11-11T11:49:38.305
 Boot Manifest-JAR contains absolute paths in classpath 'D:\frameworklasttask\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 

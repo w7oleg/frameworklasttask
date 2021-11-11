@@ -3,14 +3,11 @@ package test;
 import model.InstanceForm;
 import model.ProcessData;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import page.GoogleCloudHomePage;
 import service.InstanceCreator;
 
 public class GoogleCloudTest extends CommonConditions {
-
-
 
     @Test(description = "get a letter with the results of processing the request")
 

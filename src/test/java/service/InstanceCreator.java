@@ -15,16 +15,16 @@ public class InstanceCreator {
     private static final String COMMITTED_USAGE = "testdata.instanceCreator.committed-sage";
 
     public static InstanceForm getDataEstimateForm() {
-      return new InstanceForm(
-              TestDataReader.getTestData(NUMBER_OF_INSTANCES),
-              TestDataReader.getTestData(OPERATION_SYSTEM),
-              TestDataReader.getTestData(MACHINE_CLASS),
-              TestDataReader.getTestData(SERIES_ID),
-              TestDataReader.getTestData(MACHINE_TYPE),
-              TestDataReader.getTestData(NUMBER_OF_GPUS),
-              TestDataReader.getTestData(TYPE_GPU),
-              TestDataReader.getTestData(LOCAL_SSD),
-              TestDataReader.getTestData(DATA_CENTER_LOCATION),
-              TestDataReader.getTestData(COMMITTED_USAGE));
-      }
+        return new InstanceForm(
+                TestDataReader.getTestData(NUMBER_OF_INSTANCES),
+                TestDataReader.getTestData(OPERATION_SYSTEM),
+                TestDataReader.getTestData(MACHINE_CLASS),
+                TestDataReader.getTestData(SERIES_ID),
+                TestDataReader.getTestData(MACHINE_TYPE),
+                TestDataReader.getTestData(NUMBER_OF_GPUS),
+                TestDataReader.getTestData(TYPE_GPU),
+                TestDataReader.getTestData(LOCAL_SSD),
+                TestDataReader.getTestData(DATA_CENTER_LOCATION),
+                TestDataReader.getTestData(COMMITTED_USAGE));
     }
+}

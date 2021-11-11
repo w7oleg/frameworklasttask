@@ -35,7 +35,7 @@ public class EmailEstimatePage extends AbstractPage {
     }
 
     public EmailEstimatePage copyEmailAddress() {
-        String currentEmailAddress=String.format(linkCopyRandomAddress.getAttribute("value"));
+        String currentEmailAddress = String.format(linkCopyRandomAddress.getAttribute("value"));
         System.out.println(currentEmailAddress);
         ProcessData.setCurrentEmailAddress(currentEmailAddress);
         logger.info("copy Email Address");
