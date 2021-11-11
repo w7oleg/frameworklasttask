@@ -22,11 +22,11 @@ public class GoogleSearchResultPage extends AbstractPage {
 
     private static long WAIT_TIMEOUT_SECONDS = 10;
 
-//    @FindBy(xpath = "//a[contains(text(), 'Google Cloud Platform Pricing')]")//a[b[contains(text(),'Calculator')]]
-//    private WebElement searchResult1;
-//
-//    @FindBy(xpath = "//a[b[contains(text(),'Calculator')]]")
-//    private WebElement searchResult2;
+    @FindBy(xpath = "//a[contains(text(), 'Google Cloud Platform Pricing')]")//a[b[contains(text(),'Calculator')]]
+    private WebElement searchResult1;
+
+    @FindBy(xpath = "//a[b[contains(text(),'Calculator')]]")
+    private WebElement searchResult2;
 
     String str = "//a[contains(text(), 'Google Cloud Platform Pricing')]";
 
@@ -52,9 +52,10 @@ public class GoogleSearchResultPage extends AbstractPage {
 
         int checkLink = linkSearch.size();
         if (checkLink != 0) {
-            WebElement position = (WebElement) driver.findElements(By.xpath(str1));
-            System.out.println(position);
-            position.click();
+            searchResult1.click();
+//            WebElement position = (WebElement) driver.findElements(By.xpath(str1));
+//            System.out.println(position);
+//            position.click();
         } else {
             positionElement(str2, driver).click();
         }
